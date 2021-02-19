@@ -183,7 +183,7 @@ body {
 .all.single-post, .single-post {
     width: 100%;
 	font-family: var(--title-links-text);
-    padding-bottom: 250px;
+    padding-bottom: 150px;
 	letter-spacing: 1px;
 	font-weight: 100;
 	font-style: normal;
@@ -323,11 +323,12 @@ div#imgLarge {
 /****************************/
 /***** Contents In Pack *****/
 /****************************/
-.contents-click p {	cursor: pointer; transition: all 0.3s; }
+.contents-click { cursor: no-drop; transition: all 0.3s; }
+.contents-click p { cursor: pointer; transition: all 0.3s; }
 .contents-click p:hover { color: var(--blue);}
 .contents-click .visibleContents {
     height: 0;
-	opacity: 0;
+	display:none;
 }
 
 
@@ -353,6 +354,9 @@ div#imgLarge {
 	padding: 15px;
 	margin: 0;
 	text-align: center;
+}
+ul.links *:focus {
+    outline: none;
 }
 .footer .bottom-footer .links li {
 	list-style-type: none;
