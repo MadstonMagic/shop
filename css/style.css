@@ -15,21 +15,24 @@
 	font-display:auto;font-style:normal;font-weight:700;
 }
 
-
+::selection {background-color: rgba(0, 128, 253, 0.025);}
 
 /***********************/
 /* Basic General Style */
 /***********************/
 :root {
 	--blue: rgba(0, 128, 253, 1);
-	--darkBlue: rgba(0, 64, 121, 1);
+	--red: rgba(200, 0, 0, 1);
+	--green: rgba(0, 190, 0, 1);
+	--lightBlue: rgba(0, 64, 121, 1);
 	--white: rgba(255, 255, 255, 1);
 	--black: rgba(0, 0, 0, 1);
-	--darkGray: rgba(31, 31, 31, 1);
+	--lightGray: rgba(31, 31, 31, 1);
 	--005_black: rgba(255, 255, 255, 0.05);
 	--010_black: rgba(255, 255, 255, 0.1);
 	--015_black: rgba(255, 255, 255, 0.15);
-	--gray: rgba(26, 26, 26, 1);
+	--darkGray: rgba(26, 26, 26, 1);
+	--price: rgba(60, 60, 60, 1);
 	
 	
 	--title-links-text: conglomerate, sans-serif;
@@ -207,12 +210,47 @@ body {
     border-radius: 0 0 10px 10px;
     transform: translate(0,-4px);
 }
+.category-ribbon .price {
+	float: right;
+	color: var(--white);
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 1.5em;
+	padding: 15px;
+	border-radius: 0px 0px 0px 15px;
+	background-color: var(--price);
+}
+.category-ribbon .price .taxes {
+	font-size: 10px;
+	color: var(--darkGray);
+	text-decoration: italic;
+	font-weight: normal;
+}
+
+
 .process {
     position: absolute;
     bottom: 0;
 	padding: 15px;
 }
-
+.versions ul {margin:0;padding:0;}
+.versions ul li {max-width: 75px; list-style-type:none;}
+/* Compatibility */
+.incompatible::after, .compatible::after {
+	content:"\f00d";
+	font-family: "Font Awesome 5 Pro";
+	float: right;
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 3px;
+	color: var(--red);
+}
+.compatible::after {
+	content: "\f00c";
+	color: var(--green);
+}
 
 /*******************/
 /* Progression Bar */
@@ -301,23 +339,23 @@ div#imgLarge {
 .link_inline, .link_custom_wrapper:hover .link_custom {
 	color: var(--darkBlue);
 }
-.link_custom_wrapper:hover .link_custom {
-	padding-left: 25px;	
-}
-.link_custom_wrapper:hover .link_custom::before {
-	position: absolute;
-	display: block;
-	float: left;
-	content: "\f105";
-	font-family: "Font Awesome 5 Pro";
-	font-size: 20px;
-	font-weight: bold;
-	color: var(--white);
-}
 .single-post .links_bottom {
 	position: relative;
 	bottom: 0;
 	padding: 0px 15px 15px 15px;
+}
+input.purchase {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: var(--blue);
+    cursor: pointer;
+	transition: all 0.3s;
+}
+input.purchase:hover {
+	color: var(--white);
 }
 
 /****************************/
@@ -346,11 +384,11 @@ div#imgLarge {
 }
 .footer .footer-main-container .column {
 	padding: 25px;
-	background-color: var(--gray);
+	background-color: var(--darkGray);
 }
 .footer .bottom-footer {
 	wiodth:100%;
-	background-color: var(--darkGray);
+	background-color: var(--lightGray);
 	padding: 15px;
 	margin: 0;
 	text-align: center;
