@@ -1,13 +1,5 @@
 $(document).ready( function() {
 	
-	/********************/
-	/* Back Home Button */
-	/********************/
-	
-	$('.back_to_home').on('click', function() {
-		goBack();
-	});
-	
 	/* =========================== */
 	/*= Disable Accidental CTRL+A =*/
 	/* =========================== */	
