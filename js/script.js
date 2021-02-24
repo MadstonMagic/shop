@@ -16,9 +16,9 @@ $(document).ready( function() {
 	/* ======================== */		
 	
 	// Pictures on the sub-pages
-	//$('.posts-collection .post-img .content-img').on('click', function() {
 	$('.content-img').on('click', function() {
 		var source = $(this).attr('src');
+		$('.next').hide();
 		
 		$('#imgLarge img').attr('src', source);
 		$('#imgLarge').addClass('visible');

@@ -255,17 +255,17 @@ body {
 /*******************/
 /* Progression Bar */
 /*******************/
-.progression {
+.image-slider-wrapper .click_trigger {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 40px;
 	width: 100%;
 }
-.progression .image {
+.image-slider-wrapper .click_trigger .image {
     width: 100%;
 	background-color: var(--010_black);
 }
-.progression .image img {
+.image-slider-wrapper .click_trigger .image img {
 	width: 100%;
 	cursor: pointer;
 }
@@ -314,6 +314,30 @@ div#imgLarge {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.next {
+    font-size: 32px;
+    position: absolute;
+    z-index: 100000;
+    cursor: pointer;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 100%;
+    border: 2px solid var(--black);
+    padding: 5px 5px 5px 8px;
+    width: 32px;
+    height: 35px;
+    text-align: center;
+	background-color: var(--blue);
+	transition: all 0.3s;
+}
+.next i {
+	color: var(--black);	
+	transition: all 0.3s;
+}
+.next:hover i {
+	color: var(--white);
 }
 .tips {
     position: absolute;
