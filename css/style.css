@@ -363,7 +363,8 @@ input.purchase:hover {
 /****************************/
 .contents-click { cursor: no-drop; transition: all 0.3s; }
 .contents-click p { cursor: pointer; transition: all 0.3s; }
-.contents-click p:hover { color: var(--blue);}
+.contents-click p { color: var(--blue);}
+.contents-click p:hover { color: var(--white);}
 .contents-click .visibleContents {
     height: 0;
 	display:none;
