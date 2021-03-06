@@ -5,56 +5,91 @@
 
 /* Smaller Screens */
 @media only screen and (max-width: 768px) {
-	.posts-main-container{
-        grid-template-columns: 1fr;
-    }
-	.content-grid {
-		margin-top: 100px;
+	/* Showing the mobile menu bars */
+	.mobile-menu-button {
+		display: block;
+		float: right;
+		font-size: 32px;
+		padding: 15px;
+		cursor: pointer;
+		color: var(--blue);
+		transition: all 0.3s;
 	}
+
+	.mobile-menu-button:hover {color: var(--white);}
+	/* disabling the menu untill on menu click */
+	div.menu ul{display:none !important;}}
+
+	/*****************/
+	/* Content Posts */
+	/*****************/
+	.posts-collection *, .posts-collection input {font-size: 24px}
+	.posts-collection span.price {font-size: 32px;}
+	.posts-collection span.taxes {font-size: 16px;}
+	.posts-collection .post-content {padding-top: 50px;}
+	.posts-main-container{grid-template-columns: 1fr!;}
+	.content-grid {margin-top: 100px;}
+	.versions ul li {max-width: 100px;}
 	
 	/*links*/
-	.link_custom_wrapper:hover .link_custom {
-		padding-left: 0px;	
-	}
-	.link_custom_wrapper:hover .link_custom::before {
-		display: none;
-	}
+	.link_custom_wrapper:hover .link_custom {padding-left: 0px;}
+	.link_custom_wrapper:hover .link_custom::before {display: none;}
 	
 	/* To Top */
 	.toTopWrapper .toTop i {
-		width: 100px;
-		height: 100px;
-		font-size: 92px;
+		width: 50px;
+		height: 50px;
+		font-size: 45px;
 	}
+	.all.single-post, .single-post {
+		padding-bottom: 200px;
+	}
+	#imgLarge .imgMiddle {width:100%;}
+	
 }
 
 /* Mobile Phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 	
-	.posts-main-container{
-        grid-template-columns: 1fr;
-    }
-	.content-grid {
-		margin-top: 100px;
+	/* Showing the mobile menu bars */
+	.mobile-menu-button {
+		display: block;
+		float: right;
+		font-size: 32px;
+		padding: 15px;
+		cursor: pointer;
+		color: var(--blue);
+		transition: all 0.3s;
 	}
+
+	.mobile-menu-button:hover {color: var(--white);}
+	/* disabling the menu untill on menu click */
+	div.menu ul{display:none !important;}}
+
+	/*****************/
+	/* Content Posts */
+	/*****************/
+	.posts-collection *, .posts-collection input {font-size: 24px}
+	.posts-collection span.price {font-size: 32px;}
+	.posts-collection span.taxes {font-size: 16px;}
+	.posts-collection .post-content {padding-top: 50px;}
+	.posts-main-container{grid-template-columns: 1fr!;}
+	.content-grid {margin-top: 100px;}
+	.versions ul li {max-width: 100px;}
 	
 	/*links*/
-	.link_custom_wrapper:hover .link_custom {
-		padding-left: 0px;	
-	}
-	.link_custom_wrapper:hover .link_custom::before {
-		display: none;
-	}
+	.link_custom_wrapper:hover .link_custom {padding-left: 0px;}
+	.link_custom_wrapper:hover .link_custom::before {display: none;}
 	
 	/* To Top */
 	.toTopWrapper .toTop i {
-		width: 100px;
-		height: 100px;
-		font-size: 92px;
+		width: 50px;
+		height: 50px;
+		font-size: 45px;
 	}
-	
-	* {
-		font-size: 100%;
+	.all.single-post, .single-post {
+		padding-bottom: 200px;
 	}
+	#imgLarge .imgMiddle {width:100%;}
 	
 }

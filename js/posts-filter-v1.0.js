@@ -52,5 +52,4 @@ $(document).ready(function(){
 		$('.single-post.all').css("display","none");
 		$('.single-post.creatures').css("display","block");
 	});
-	
 });
