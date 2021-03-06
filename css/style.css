@@ -162,6 +162,7 @@ body {
 	z-index: 10000;
 	opacity: 1;	
 }
+.mobile-menu-button {display: none;}
 
 /****************/
 /* Single Posts */
