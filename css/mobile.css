@@ -1,0 +1,31 @@
+
+/****************************/
+/* Smaller Screens + Mobile */
+/****************************/
+
+/* Mobile Phones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+	
+	.posts-main-container{
+        grid-template-columns: 1fr;
+    }
+	.content-grid {
+		margin-top: 100px;
+	}
+	
+	/*links*/
+	.link_custom_wrapper:hover .link_custom {
+		padding-left: 0px;	
+	}
+	.link_custom_wrapper:hover .link_custom::before {
+		display: none;
+	}
+	
+	/* To Top */
+	.toTopWrapper .toTop i {
+		width: 100px;
+		height: 100px;
+		font-size: 92px;
+	}
+	
+}
