@@ -48,13 +48,13 @@
 	}
 	
 }
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 3)  {
 	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
 	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
 }
-@media only screen and (min-width: 801px) and (max-width: 1015px)  {
+@media only screen and (min-device-width: 801px) and (max-device-width: 1015px) and (-webkit-min-device-pixel-ratio: 3) {
 	.posts-main-container{grid-template-columns: repeat(2, 1fr);}
 }
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-device-width: 1210px) and (-webkit-min-device-pixel-ratio: 3){
 	.footer .footer-main-container { grid-template-columns: repeat(2, 2fr);	}
 }
