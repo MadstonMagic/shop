@@ -5,7 +5,7 @@
 
 
 /* Mobile Phones */
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 320px) and (max-width: 905px) {
 	
 	/* Showing the mobile menu bars */
 	.mobile-menu-button {
@@ -20,13 +20,13 @@
 
 	.mobile-menu-button:hover {color: var(--white);}
 	/* disabling the menu untill on menu click */
-	div.menu ul{display:none !important;}}
+	div.menu ul{display:none !important;}
 
 	/*****************/
 	/* Content Posts */
 	/*****************/
 	.posts-collection *, .posts-collection input {font-size: 24px}
-	.posts-collection span.price {font-size: 32px;}
+	.posts-collection span.price {font-size: 24px;}
 	.posts-collection span.taxes {font-size: 16px;}
 	.posts-collection .post-content {padding-top: 50px;}
 	.posts-main-container{grid-template-columns: 1fr!;}
@@ -46,6 +46,15 @@
 	.all.single-post, .single-post {
 		padding-bottom: 200px;
 	}
-	#imgLarge .imgMiddle {width:100%;}
 	
+}
+@media only screen and (max-width: 800px) {
+	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
+	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
+}
+@media only screen and (min-width: 801px) and (max-width: 1015px) {
+	.posts-main-container{grid-template-columns: repeat(2, 1fr);}
+}
+@media only screen and (max-width: 1210px) {
+	.footer .footer-main-container { grid-template-columns: repeat(2, 2fr);	}
 }

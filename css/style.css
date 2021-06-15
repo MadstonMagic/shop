@@ -290,7 +290,7 @@ div#imgLarge {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 75%;
+	width: calc(100% - 15%);
 }
 #imgLarge p.exit {
     font-size: 58px;
@@ -315,6 +315,7 @@ div#imgLarge {
 	position: absolute;
 	top: 0;
 	left: 0;
+    cursor: pointer;
 }
 .next {
     font-size: 32px;
