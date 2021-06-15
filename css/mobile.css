@@ -5,7 +5,7 @@
 
 
 /* Mobile Phones */
-@media only screen and (min-width: 320px) and (max-width: 905px) {
+@media only screen and (min-width: 320px) and (max-width: 905px) and (min-device-width: 320px) and (max-device-width: 905px) {
 	
 	/* Showing the mobile menu bars */
 	.mobile-menu-button {
@@ -48,13 +48,13 @@
 	}
 	
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (max-device-width: 800px) {
 	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
 	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
 }
-@media only screen and (min-width: 801px) and (max-width: 1015px) {
+@media only screen and (min-width: 801px) and (max-width: 1015px) and (min-device-width: 801px) and (max-device-width: 1015px) {
 	.posts-main-container{grid-template-columns: repeat(2, 1fr);}
 }
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1210px) and (max-device-width: 1210px) {
 	.footer .footer-main-container { grid-template-columns: repeat(2, 2fr);	}
 }
