@@ -2,10 +2,8 @@
 /****************************/
 /* Smaller Screens + Mobile */
 /****************************/
-
-
-/* Mobile Phones */
-@media only screen and (min-width: 320px) and (max-width: 905px) and (min-device-width: 320px) and (max-device-width: 905px) {
+@media only screen and (max-device-width: 1015px)  {
+	
 	
 	/* Showing the mobile menu bars */
 	.mobile-menu-button {
@@ -17,48 +15,49 @@
 		color: var(--blue);
 		transition: all 0.3s;
 	}
-
 	.mobile-menu-button:hover {color: var(--white);}
 	/* disabling the menu untill on menu click */
 	div.menu ul{display:none !important;}
-
+	
+	
+	
+	/* Header */
+	.header {
+		min-height: 400px;
+		max-height: 400px;
+	}
+	.header .slide .slider_content h1, .slide .slider_content p { font-size: 4em; }
+	
+	
 	/*****************/
 	/* Content Posts */
 	/*****************/
 	.posts-collection *, .posts-collection input {font-size: 24px}
-	.posts-collection span.price {font-size: 24px;}
-	.posts-collection span.taxes {font-size: 16px;}
 	.posts-collection .post-content {padding-top: 50px;}
-	.posts-main-container{grid-template-columns: 1fr!;}
-	.content-grid {margin-top: 100px;}
-	.versions ul li {max-width: 100px;}
+	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
+	.links_bottom input.purchase { font-size: 2em;	}
+	.posts-collection span.price {font-size: 3em;}
+	.posts-collection span.taxes {font-size: 2em;}
+	.image-slider-wrapper .click_trigger { grid-template-columns: repeat(2, 1fr);}
+	.image-slider-wrapper .click_trigger div.image img {width:100%;}
+	.versions ul li {max-width: 150px;}
+	.versions ul li span::after {font-size:28px;}
 	
-	/*links*/
-	.link_custom_wrapper:hover .link_custom {padding-left: 0px;}
-	.link_custom_wrapper:hover .link_custom::before {display: none;}
+	/* Images */
+	.next { 
+		text-align: center;
+		font-size: 4.5em;
+		width: 80px;
+		height: 80px;
+	}
+	
+	/* Footer */
+	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
 	
 	/* To Top */
 	.toTopWrapper .toTop i {
-		width: 50px;
-		height: 50px;
-		font-size: 45px;
+		width: 100px;
+		height: 100px;
+		font-size: 6em;
 	}
-	.all.single-post, .single-post {
-		padding-bottom: 200px;
-	}
-	
-}
-@media only screen and (max-device-width: 800px)  {
-	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
-	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
-	
-	.header {bacgkround-color: red;}
-}
-@media only screen and (min-device-width: 801px) and (max-device-width: 1015px) {
-	.posts-main-container{grid-template-columns: repeat(2, 1fr);}
-	.header {bacgkround-color: orange;}
-}
-@media only screen and (max-device-width: 1210px) {
-	.footer .footer-main-container { grid-template-columns: repeat(2, 2fr);	}
-	.header {bacgkround-color: green;}
 }

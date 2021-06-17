@@ -22,6 +22,7 @@
 /***********************/
 :root {
 	--blue: rgba(0, 128, 253, 1);
+	--darkBlue: rgba(0, 75, 150, 1);
 	--red: rgba(200, 0, 0, 1);
 	--green: rgba(0, 190, 0, 1);
 	--lightBlue: rgba(0, 64, 121, 1);
@@ -232,7 +233,7 @@ body {
 
 
 .process {
-    position: absolute;
+    position: relative;
     bottom: 0;
 	padding: 15px;
 }
@@ -325,7 +326,6 @@ div#imgLarge {
     bottom: 0%;
     left: 50%;
     transform: translate(-50%);
-    border-radius: 100%;
     border: 2px solid var(--black);
     padding: 5px 5px 5px 8px;
     width: 32px;
@@ -371,7 +371,7 @@ div#imgLarge {
 	padding: 0px 15px 15px 15px;
 }
 input.purchase {
-    font-size: 18px;
+    font-size: 22px;
     outline: none;
     border: none;
     background-color: transparent;
