@@ -70,9 +70,9 @@ $(document).ready( function() {
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		
-		if (y > 200) {
+		if (y > 400) {
 			$('.stickyMenuWrapper').addClass("visible");
-		} else if(y < 200) {
+		} else if(y < 400) {
 			$('.stickyMenuWrapper').removeClass("visible");
 		}
 	});	
