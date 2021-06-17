@@ -88,18 +88,19 @@ body {
 /*******************/
 .header {
 	display: block;
+	position: relative;
 	width: 100%;
 	background: var(--blue);
     min-height: 400px;
     max-height: 400px;
 }
-.header .slide {position: relative;}
 .header .slider_content {
-    position: relative;
+    position: absolute;
     text-align: center;
     z-index: 1000000;
     top: 50%;
-    transform: translate(0, 50%);
+	left:50%;
+    transform: translate(-50%, -50%);
 }
 .header .slider_content h1 {
 	margin: 0;
