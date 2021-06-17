@@ -26,7 +26,7 @@
 		min-height: 400px;
 		max-height: 400px;
 	}
-	.header .slide h1, .slide p { font-size: 4em; }
+	.header .slider_content h1, .header .slider_content p { font-size: 4em; }
 	
 	
 	/*****************/
