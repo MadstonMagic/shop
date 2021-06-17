@@ -9,8 +9,9 @@
 	.mobile-menu-button {
 		display: block;
 		float: right;
-		font-size: 32px;
+		font-size: 4em;
 		padding: 15px;
+		margin-right: 15px;
 		cursor: pointer;
 		color: var(--blue);
 		transition: all 0.3s;

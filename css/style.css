@@ -93,6 +93,7 @@ body {
     min-height: 400px;
     max-height: 400px;
 }
+.header .slide {position: relative;}
 .header .slider_content {
     position: relative;
     text-align: center;
