@@ -240,7 +240,7 @@ body {
 	padding: 15px;
 }
 .versions ul {margin:0;padding:0;}
-.versions ul li {max-width: 75px; list-style-type:none;}
+.versions ul li {max-width: 100px; list-style-type:none;}
 /* Compatibility */
 .incompatible::after, .compatible::after {
 	content:"\f00d";

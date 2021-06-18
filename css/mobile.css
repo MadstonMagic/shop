@@ -40,7 +40,7 @@
 	.posts-collection span.taxes {font-size: 2em;}
 	.image-slider-wrapper .click_trigger { grid-template-columns: repeat(2, 1fr);}
 	.image-slider-wrapper .click_trigger div.image img {width:100%;}
-	.versions ul li {max-width: 150px;}
+	.versions ul li {max-width: 300px;}
 	.versions ul li span::after {font-size:28px;}
 	
 	/* Images */
