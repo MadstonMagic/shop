@@ -453,6 +453,9 @@ ul.links *:focus {
 .footer .bottom-footer .links li img {
 	width: 30px;
 }
+.footer .bottom-footer .links li .cc_image {
+	width: 100px;
+}
 .footer .column .links li img, .footer .column .links li input {
 	height: 35px;
 	padding: 10px;

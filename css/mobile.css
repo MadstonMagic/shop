@@ -27,17 +27,27 @@
 		max-height: 400px;
 	}
 	.header .slider_content h1, .header .slider_content p { font-size: 4em; }
+	.header .slider_content { width: 100%; }
 	
 	
 	/*****************/
 	/* Content Posts */
 	/*****************/
 	.posts-collection *, .posts-collection input {font-size: 24px}
+	.posts-collection .single-post:after {
+		content: " ";
+		display: inline-block;
+		position: absolute;
+		height: 40px;
+		width: 100%;
+		background-color: rgba(0, 128, 255, 1);
+		bottom: 0;
+	}
 	.posts-collection .post-content {padding-top: 50px;}
 	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
 	.links_bottom input.purchase { font-size: 2em;	}
-	.posts-collection span.price {font-size: 3em;}
-	.posts-collection span.taxes {font-size: 2em;}
+	.posts-collection .category-ribbon span.price {font-size: 3em;}
+	.posts-collection .category-ribbon span.taxes {font-size: 0.3em;display:block; padding: 5px;}
 	.image-slider-wrapper .click_trigger { grid-template-columns: repeat(2, 1fr);}
 	.image-slider-wrapper .click_trigger div.image img {width:100%;}
 	.versions ul li {max-width: 300px;}
@@ -53,6 +63,24 @@
 	
 	/* Footer */
 	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
+	.footer h2 { font-size: 5em; }
+	.footer li { font-size: 2.5em; }
+	body .footer .column .links li img, body .footer .column .links li input { height: 100px; }
+	.footer .bottom-footer, .footer .links {padding-left:0;padding-right:0;}
+	.footer .bottom-footer .links li .cc_image { width: 250px; }
+	.footer .bottom-footer .links li {margin:0; position: relative; display: block; width: 100%; padding: 25px 0;}
+	.footer .bottom-footer .links li:nth-child(1):after, .footer .bottom-footer .links li:nth-child(2):after, .footer .bottom-footer .links li:nth-child(3):after {
+		content: " ";
+		display: inline-block;
+		position: absolute;
+		height: 2px;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%,0);
+		background-color: rgba(0, 128, 255, 1);
+		bottom: 0;
+	}
+	.footer .bottom-footer .links li img { width: 100px;}
 	
 	/* To Top */
 	.toTopWrapper .toTop i {
