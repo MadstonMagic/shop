@@ -109,6 +109,20 @@ $(document).ready( function() {
 			});
 		}, 4000);
 	});	
+	//-----------------------------------------------------------------------------------
+	
+	
+	
+	/* ========================== */
+	/* ===== Hamburger Menu ===== */
+	/* ========================== */
+	$('.mobile-menu-button .button').on('click', function(event) {
+		$('.menuWrapper .menu .menuList').addClass('mobileMenuVisible');
+	});
+	
+	$('.menuWrapper .menu .menuList.mobileMenuVisible li, .menuWrapper .menu .menuList.mobileMenuVisible a').click(function(event) {
+		$('.menuList.mobileMenuVisible').removeClass('mobileMenuVisible');
+	});
 })
 
 

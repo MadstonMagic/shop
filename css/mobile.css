@@ -17,9 +17,37 @@
 	}
 	.mobile-menu-button:hover {color: var(--white);}
 	/* disabling the menu untill on menu click */
-	div.menu ul{display:none !important;}
+	div.menu ul{display:none; height:0;
+		transition: height 0.3s ease-out;}
 	
-	
+	body .menuWrapper .menu .mobileMenuVisible {
+		display: block;
+		height: 100%;
+		width: 100%;
+		z-index: 10000000;
+		position: fixed;
+		background-color: rgba(90, 90, 90 , 0.95);
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+	}
+	body .menuWrapper .menu .mobileMenuVisible li, body .menuWrapper .menu .mobileMenuVisible li a {
+		font-size: 75px !important;
+		width: 100%;
+		margin: 0 !important;
+		padding: 1em 0 !important;
+		color: #FFFFFF !important;
+	}
+	body .menuWrapper .menu .mobileMenuVisible li a {
+		padding: 0 !important;	
+	}
+	body .menuWrapper .menu .mobileMenuVisible li:hover, body .menuWrapper .menu .mobileMenuVisible li a:hover {
+		background-color: rgba(0, 128, 255, 1);		
+	}
+	body .menuWrapper .menu .mobileMenuVisible .hiddenLargeScreen {
+		display: block;
+	}
 	
 	/* Header */
 	.header {

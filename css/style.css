@@ -165,7 +165,7 @@ body {
 	z-index: 10000;
 	opacity: 1;	
 }
-.mobile-menu-button {display: none;}
+.mobile-menu-button, body .menuWrapper .menu .menuList .hiddenLargeScreen {display: none;}
 
 /****************/
 /* Single Posts */
