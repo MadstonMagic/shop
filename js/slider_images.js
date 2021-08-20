@@ -4,7 +4,7 @@ $(document).ready( function() {
 	/* ========================== */		
 	
 	// Pictures on the sub-pages
-	$('.click_trigger').on('click', function(selector) {
+	$('.click_trigger.image').on('click', function(selector) {
 		
 		var source1 = $(this).find('.img1').attr('src');
 		var source2 = $(this).find('.img2').attr('src');
@@ -51,4 +51,21 @@ $(document).ready( function() {
 		}
 	});	
 	//-----------------------------------------------------------------------------------
+	
+	
+	$('.click_trigger.video').on('click', function() { 
+	
+		$('.videoOpened').fadeIn(300);
+		$('.videoOpened').addClass('visible');
+		$('.videoOpened').removeClass('hidden');
+		
+		window.open('https://www.youtube.com/watch?v=CEpgqnER5PU','_blank').focus();
+	
+	
+		$('.videoOpened .exit').on('click', function() {
+			$('.videoOpened').removeClass('visible');
+			$('.videoOpened').addClass('hidden');
+			$('.videoOpened').fadeOut(300);	
+		});
+	});
 })

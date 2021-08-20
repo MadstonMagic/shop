@@ -264,16 +264,18 @@ body {
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 40px;
 	width: 100%;
+	position: relative;
 }
 .image-slider-wrapper .click_trigger .image {
     width: 100%;
-	background-color: var(--010_black);
 }
 .image-slider-wrapper .click_trigger .image img {
 	width: 100%;
 	cursor: pointer;
 }
-
+.image-slider-wrapper .click_trigger.video .videoWrapper {
+	position: relative;
+}
 
 
 /*****************/
@@ -355,6 +357,53 @@ div#imgLarge {
 .tips h4 {
     font-weight: 300;
 }
+
+
+/*******************************/
+/****** Video Tab Message ******/
+/*******************************/
+.videoOpened {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    background-color: black;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 3em 0;
+    font-size: 3em;
+    border: 4px solid rgba(0, 128, 255, 1);
+}
+.videoOpened .exit {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    cursor: pointer;    
+}
+.hidden {
+	display: none;
+}
+.fa.playbutton {
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+	cursor: pointer;
+	color: rgba{255, 255, 255, 1};
+}
+.click_trigger.video .img:hover fa.playbutton {
+	color: rgba{0, 128, 255, 1};
+}
+
+
+
+
+
+
+
+
+
 
 /****************/
 /* Custom Links */
