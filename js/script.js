@@ -70,9 +70,9 @@ $(document).ready( function() {
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		
-		if (y > 200) {
+		if (y > 400) {
 			$('.stickyMenuWrapper').addClass("visible");
-		} else if(y < 200) {
+		} else if(y < 400) {
 			$('.stickyMenuWrapper').removeClass("visible");
 		}
 	});	
@@ -109,6 +109,20 @@ $(document).ready( function() {
 			});
 		}, 4000);
 	});	
+	//-----------------------------------------------------------------------------------
+	
+	
+	
+	/* ========================== */
+	/* ===== Hamburger Menu ===== */
+	/* ========================== */
+	$('.mobile-menu-button .button').on('click', function(event) {
+		$('.menuWrapper .menu .menuList').addClass('mobileMenuVisible');
+	});
+	
+	$('.menuWrapper .menu .menuList.mobileMenuVisible li, .menuWrapper .menu .menuList.mobileMenuVisible a').click(function(event) {
+		$('.menuList.mobileMenuVisible').removeClass('mobileMenuVisible');
+	});
 })
 
 

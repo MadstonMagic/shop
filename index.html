@@ -51,12 +51,10 @@
 		
 		<!-- Header - Parallax -->
 		<div class="header">
-			<div class="slide">
-				<div class="slider_content">
+			<div class="slider_content">
 					<h1>MadstonMagic - 3D Model Shop</h1>
 					<p class="slider_text">Madston's Magic</p>
 				</div>
-			</div>
 		</div>
 		<!--------------------------------------------------------------------------------------------------------------->
 		<!-- Moving Menu ------------------------------------------------------------------------------------------------>
@@ -75,6 +73,7 @@
 					<li class="menuList_item category-title cat_creatures">Creatures</li>
 					<li class="menuList_item category-title cat_misc">Misc</li>
 					<li class="menuList_item category-title page_contact"><a href="../shop/contact">Contact</a></li>
+					<li class="menuList_item category-title close hiddenLargeScreen"><i class="fa fa-times"></i></li>
 				</ul>
 			</div>
 		</div>
@@ -93,6 +92,7 @@
 					<li class="menuList_item category-title cat_creatures">Creatures</li>
 					<li class="menuList_item category-title cat_misc">Misc</li>
 					<li class="menuList_item category-title page_contact"><a href="../shop/contact">Contact</a></li>
+					<li class="menuList_item category-title close hiddenLargeScreen"><i class="fa fa-times"></i></li>
 				</ul>
 			</div>
 		</div>
@@ -153,15 +153,14 @@
 									<li><span class="1_14 compatible">1.14+</span></li>							
 								</ul>
 							</p>
-						</div>
-					
+						</div>					
 					</div>
 					<!-- Progression images -------------->
 					<div class="process">
 						<div class="inner">
 							<h2>More Images</h2>
 							<div class="image-slider-wrapper">
-								<div class="click_trigger" title="Click to view the images">
+								<div class="click_trigger image" title="Click to view the images">
 									<div class="image">
 										<img class="img1" src="../shop/images/shop/cod_mw3_pack_2.png" alt="COD MW3 Pack">
 									</div>
@@ -193,7 +192,7 @@
 				<!------------------------------------------------------------------------------------------->
 				<!-- Glock 18 C - Low Poly ------------------------------------------------------------------>
 				<!------------------------------------------------------------------------------------------->
-				<div class="all firearms single-post" id="mw3_pack">					
+				<div class="all firearms single-post" id="glock-18">					
 					<div class="post-img">
 						<div class="vergroot-glas"><i class="fa fa-expand-alt"></i></div>
 						<img class="content-img" src="../shop/images/shop/glock18_c.png" alt="post">
@@ -246,7 +245,86 @@
 				<!------------------------------------------------------------------------------------------->
 				
 				
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Bechowiec-1 ---------------------------------------------------------------------------->
+				<!------------------------------------------------------------------------------------------->
+				<div class="all firearms single-post" id="bechowiec">					
+					<div class="post-img">
+						<div class="vergroot-glas"><i class="fa fa-expand-alt"></i></div>
+						<img class="content-img" src="../shop/images/shop/bechowiec.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Firearms</span>
+						<span class="price">&euro; 30 <span class="taxes">excl. 1,37% VAT</span></span> 
+					</div>
+
+					<div class="post-content">
+						<h1>Bechowiec-1 - 3D Model</h1>
+						<p>
+							<div>
+								<span class="contents-click">
+									<p>View Pack Contents</p>
+									<div class="contents-wrapper">
+										<ul class="visibleContents">
+											<li>1x Bechowiec 3D Model</li>
+										</ul>
+									</div>
+								</span>
+							</div>
+						</p>
+						
+						<div class="versions">						
+							<h1>Version Compatibility</h1>
+							<p>
+								<ul>
+									<li><span class="1_8 incompatible">1.8+</span></li>
+									<li><span class="1_9 incompatible">1.9+</span></li>
+									<li><span class="1_12 incompatible">1.12+</span></li>
+									<li><span class="1_13 incompatible">1.13+</span></li>
+									<li><span class="1_14 compatible">1.14 - 1.17</span></li>
+							</p>
+						</div>					
+					</div>	
+					<!-- Progression images -------------->
+					<div class="process">
+						<div class="inner">
+							<h2>Video</h2>
+							<div class="image-slider-wrapper">
+								<div class="click_trigger video" title="Click to view the images">
+									<div class="image">
+										<div class="videoWrapper">
+											<i class="fa fa-play playbutton"></i>
+											<img class="img1" src="../shop/images/shop/bechowiec_thumbnail.png" alt="COD MW3 Pack">
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>				
+					<!-- Purchase Button -->
+					<div class="links_bottom">
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+							<input type="submit" value="Purchase Now!" class="purchase">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="QRAH5898VQYN2">
+						</form>					
+					</div>	
+				</div>
+				<!------------------------------------------------------------------------------------------->
+				<!-- End Bechowiec-1 ------------------------------------------------------------------------>
+				<!------------------------------------------------------------------------------------------->
+			</div>	
+		</div>
+		
+		<div class="videoOpened hidden">
+			<div class="exit">
+				<i class="fa fa-times"></i>
 			</div>
+			<h3>
+				The video has been opened in another tab!
+			</h3>
 		</div>
 		<!---------------------->
 		<!-- End Single Posts -->
@@ -335,7 +413,7 @@
 				</li>
 				<li title="My work is licensed under a Creative Commons Attribution-Non-Commercial-No Derivative Works 4.0 International License">
 					<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-						<img alt="Creative Commons-Licentie" style="border-width:0;width:75px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+						<img alt="Creative Commons-Licentie" class="cc_image" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
 					</a>
 				</li>
 			</ul>

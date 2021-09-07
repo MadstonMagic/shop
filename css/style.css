@@ -22,6 +22,7 @@
 /***********************/
 :root {
 	--blue: rgba(0, 128, 253, 1);
+	--darkBlue: rgba(0, 75, 150, 1);
 	--red: rgba(200, 0, 0, 1);
 	--green: rgba(0, 190, 0, 1);
 	--lightBlue: rgba(0, 64, 121, 1);
@@ -87,17 +88,19 @@ body {
 /*******************/
 .header {
 	display: block;
+	position: relative;
 	width: 100%;
 	background: var(--blue);
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 400px;
+    max-height: 400px;
 }
 .header .slider_content {
-    position: relative;
+    position: absolute;
     text-align: center;
     z-index: 1000000;
     top: 50%;
-    transform: translate(0, 50%);
+	left:50%;
+    transform: translate(-50%, -50%);
 }
 .header .slider_content h1 {
 	margin: 0;
@@ -162,7 +165,7 @@ body {
 	z-index: 10000;
 	opacity: 1;	
 }
-.mobile-menu-button {display: none;}
+.mobile-menu-button, body .menuWrapper .menu .menuList .hiddenLargeScreen {display: none;}
 
 /****************/
 /* Single Posts */
@@ -232,12 +235,12 @@ body {
 
 
 .process {
-    position: absolute;
+    position: relative;
     bottom: 0;
 	padding: 15px;
 }
 .versions ul {margin:0;padding:0;}
-.versions ul li {max-width: 75px; list-style-type:none;}
+.versions ul li {max-width: 100px; list-style-type:none;}
 /* Compatibility */
 .incompatible::after, .compatible::after {
 	content:"\f00d";
@@ -261,16 +264,18 @@ body {
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 40px;
 	width: 100%;
+	position: relative;
 }
 .image-slider-wrapper .click_trigger .image {
     width: 100%;
-	background-color: var(--010_black);
 }
 .image-slider-wrapper .click_trigger .image img {
 	width: 100%;
 	cursor: pointer;
 }
-
+.image-slider-wrapper .click_trigger.video .videoWrapper {
+	position: relative;
+}
 
 
 /*****************/
@@ -325,7 +330,6 @@ div#imgLarge {
     bottom: 0%;
     left: 50%;
     transform: translate(-50%);
-    border-radius: 100%;
     border: 2px solid var(--black);
     padding: 5px 5px 5px 8px;
     width: 32px;
@@ -354,6 +358,53 @@ div#imgLarge {
     font-weight: 300;
 }
 
+
+/*******************************/
+/****** Video Tab Message ******/
+/*******************************/
+.videoOpened {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    background-color: black;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 3em 0;
+    font-size: 3em;
+    border: 4px solid rgba(0, 128, 255, 1);
+}
+.videoOpened .exit {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    cursor: pointer;    
+}
+.hidden {
+	display: none;
+}
+.fa.playbutton {
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+	cursor: pointer;
+	color: rgba{255, 255, 255, 1};
+}
+.click_trigger.video .img:hover fa.playbutton {
+	color: rgba{0, 128, 255, 1};
+}
+
+
+
+
+
+
+
+
+
+
 /****************/
 /* Custom Links */
 /****************/
@@ -371,7 +422,7 @@ div#imgLarge {
 	padding: 0px 15px 15px 15px;
 }
 input.purchase {
-    font-size: 18px;
+    font-size: 22px;
     outline: none;
     border: none;
     background-color: transparent;
@@ -450,6 +501,9 @@ ul.links *:focus {
 }
 .footer .bottom-footer .links li img {
 	width: 30px;
+}
+.footer .bottom-footer .links li .cc_image {
+	width: 100px;
 }
 .footer .column .links li img, .footer .column .links li input {
 	height: 35px;
