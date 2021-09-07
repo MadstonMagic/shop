@@ -51,6 +51,10 @@
 @media only screen and (max-device-width: 800px)  {
 	.posts-main-container{grid-template-columns: repeat(1, 1fr);}
 	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
+	.posts-collection .single-post .post-content, .over-mij-wrapper .over-mij-container .post-content {margin: 0 0 3em 0;}
+	.versions ul li {max-width: 150px;}
+	.versions span {font-size: 25px;}
+	.single-post .links_bottom { padding: 2em 15px 2em 15px; }
 	
 	.header {bacgkround-color: red;}
 }
