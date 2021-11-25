@@ -47,7 +47,7 @@
 		font-size: 75px !important;
 		width: 100%;
 		margin: 0 !important;
-		padding: 1em 0 !important;
+		padding: 0.35em 0 !important;
 		color: #FFFFFF !important;
 	}
 	body .menuWrapper .menu .mobileMenuVisible li a {
@@ -97,6 +97,7 @@
 	.next { 
 		text-align: center;
 		font-size: 4.5em;
+		width: 50%;
 	}
 	
 	/* Footer */
