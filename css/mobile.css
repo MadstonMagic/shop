@@ -17,9 +17,20 @@
 	}
 	.mobile-menu-button:hover {color: var(--white);}
 	/* disabling the menu untill on menu click */
-	div.menu ul{display:none; height:0;
-		transition: height 0.3s ease-out;}
-	
+	div.menu ul{
+		display:none;
+		height:0;
+		transition: height 0.3s ease-out;
+	}
+	.menu .close.hiddenLargeScreen {
+		display: block;
+		font-size: 4em;
+		text-align: center;
+		padding-top: 25px;
+	}
+	.menu .close.hiddenLargeScreen:hover {
+		color: var(--blue);
+	}
 	body .menuWrapper .menu .mobileMenuVisible {
 		display: block;
 		height: 100%;
@@ -78,23 +89,20 @@
 	.posts-collection .category-ribbon span.taxes {font-size: 0.3em;display:block; padding: 5px;}
 	.image-slider-wrapper .click_trigger { grid-template-columns: repeat(2, 1fr);}
 	.image-slider-wrapper .click_trigger div.image img {width:100%;}
-	.versions ul li {max-width: 300px;}
-	.versions ul li span::after {font-size:28px;}
+	.versions ul li {max-width: 100%;border-bottom: 1px solid #fff;}
+	.versions span {font-size: 25px;}
+	.versions ul li span::after {padding-top: 15px;font-size:28px;}
 	
 	/* Images */
 	.next { 
 		text-align: center;
 		font-size: 4.5em;
-		width: 80px;
-		height: 80px;
 	}
 	
 	/* Footer */
 	.footer .footer-main-container { grid-template-columns: repeat(1, 2fr);	}
 
 	.posts-collection .single-post .post-content, .over-mij-wrapper .over-mij-container .post-content {margin: 0 0 3em 0;}
-	.versions ul li {max-width: 150px;}
-	.versions span {font-size: 25px;}
 	.single-post .links_bottom { padding: 2em 15px 2em 15px; }
 	.footer h2 { font-size: 5em; }
 	.footer li { font-size: 2.5em; }

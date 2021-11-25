@@ -155,6 +155,9 @@ body {
     left: 15px;
     transform: translate(0,-50%);
 }
+.menu .close.hiddenLargeScreen {
+    display: none;
+}
 .stickyMenuWrapper {display:none;background-color: var(--black);transition:all 0.3s;opacity:0;z-index: -10;}
 .visible {
 	display: block;
@@ -332,18 +335,14 @@ div#imgLarge {
     transform: translate(-50%);
     border: 2px solid var(--black);
     padding: 5px 5px 5px 8px;
-    width: 32px;
-    height: 35px;
     text-align: center;
 	background-color: var(--blue);
 	transition: all 0.3s;
+	width: 200px;
 }
-.next i {
-	color: var(--black);	
-	transition: all 0.3s;
-}
-.next:hover i {
-	color: var(--white);
+.next li {list-style-type:none;}
+.next:hover {
+	background-color: var(--darkBlue);
 }
 .tips {
     position: absolute;

@@ -117,11 +117,15 @@ $(document).ready( function() {
 	/* ===== Hamburger Menu ===== */
 	/* ========================== */
 	$('.mobile-menu-button .button').on('click', function(event) {
-		$('.menuWrapper .menu .menuList').addClass('mobileMenuVisible');
+		if ($(window).width() < 1065) {
+			$('.menuWrapper .menu .menuList').addClass('mobileMenuVisible');
+		}		
 	});
 	
-	$('.menuWrapper .menu .menuList.mobileMenuVisible li, .menuWrapper .menu .menuList.mobileMenuVisible a').click(function(event) {
-		$('.menuList.mobileMenuVisible').removeClass('mobileMenuVisible');
+	$('.menuWrapper .menu .menuList .close, .menuWrapper .menu .menuList li, .menuWrapper .menu .menuList a').click(function(event) {
+		if ($(window).width() < 1065) {
+			$('.menuList.mobileMenuVisible').removeClass('mobileMenuVisible');
+		}
 	});
 })
 
