@@ -50,6 +50,6 @@ $(document).ready(function(){
 		$('.menuList_item').css("color", "var(--blue)");
 		$('.cat_misc').css("color", "var(--white)");
 		$('.single-post.all').css("display","none");
-		$('.single-post.creatures').css("display","block");
+		$('.single-post.misc').css("display","block");
 	});
 });

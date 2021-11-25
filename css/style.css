@@ -466,7 +466,7 @@ input.purchase:hover {
 .footer .bottom-footer {
 	wiodth:100%;
 	background-color: var(--lightGray);
-	padding: 15px;
+	padding-top: 15px;
 	margin: 0;
 	text-align: center;
 }
@@ -509,6 +509,13 @@ ul.links *:focus {
 	padding: 10px;
 }
 
+.footer .cc_expanded {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	background-color: #000000;
+	padding: 25px;
+}
 
 
 
