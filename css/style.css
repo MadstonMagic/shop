@@ -50,7 +50,7 @@ body {
 	font-family: var(--sub-title);
 	background-color: var(--black);
 }
-.posts-collection {
+.posts-collection, .tas_content  {
     width: 90vw;
     margin: 0 auto;
     padding: 40px 0;
@@ -248,10 +248,12 @@ body {
 .incompatible::after, .compatible::after {
 	content:"\f00d";
 	font-family: "Font Awesome 5 Pro";
-	float: right;
 	display: inline-block;
 	font-weight: bold;
-	margin-top: 3px;
+	position: relative;
+	margin-left: 5px;
+	top: 3px;
+	right: 0;
 	color: var(--red);
 }
 .compatible::after {
@@ -522,15 +524,25 @@ ul.links *:focus {
 
 
 
-/****************************/
-/* Smaller Screens + Mobile */
-/****************************/
-/*@media only screen and (max-width: 1243px) {img.logo { display:none; }}
-@media only screen and (max-device-width: 1243px) {img.logo { display:none; }}
-@media only screen and (min-width: 769px) and (max-width: 1170px) {.posts-main-container{grid-template-columns: repeat(2, 1fr);}}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1170px) {.posts-main-container{grid-template-columns: repeat(2, 1fr);}}
+/**********************/
+/* Terms And Services */
+/**********************/
+.tas_content .updateDate {
+	color: var(--blue);
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 25px;
+}
 
-@media only screen and (max-width: 1076px) {
-	.content-grid {margin-top: 5.5em;}
-    .menu {display:none;}
-} */
+.tas_content .tas_index {
+	color: black;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	padding: 25px 20px 25px 0px;
+	z-index: 10000;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.tas_content .tas_index ul, .tas_content .tas_index ul li {
+	list-style-type: none;
+}
+
