@@ -86,6 +86,9 @@ $(document).ready( function() {
 	$('.contents-click').on('click', function() {
 		$(this).find('ul').toggleClass('visibleContents');
 	});
+	$('.version-click').on('click', function() {
+		$(this).find('ul').toggleClass('visibleCompatibilities');
+	});
 	
 	
 	
@@ -94,12 +97,15 @@ $(document).ready( function() {
 	$(function () {
 		count = 0;
 		textArray = [
-			'Madston\'s Magic',
-			'Tip: Click on the images to enlarge them.',
-			'3D modeler of Minecraft Java models',
+			'3D Game Artist',
+			'Tip: Click on the images to make them larger',
+			'Originally a minecraft 3D Modeler',
 			'Fulltime PC user',
-			'Addicted to looking at pictures of cool games I can\'t afford',
-			'Professional Gaming Chair user.'
+			'Addicted to looking at pictures of cool stuff I can\'t afford',
+			'Buy me a coffee perhaps?',
+			'3D Game assets!',
+			'Time for some gaming',
+			'Imagine using my work, wouldn\'t that be great?'
 		];
 		
 		setInterval(function () {
@@ -116,19 +122,41 @@ $(document).ready( function() {
 	/* ========================== */
 	/* ===== Hamburger Menu ===== */
 	/* ========================== */
-	$('.mobile-menu-button .button').on('click', function(event) {
-		if ($(window).width() < 1065) {
+	if ($(window).width() < 1440) {
+		$('.mobile-menu-button .button').on('click', function() {
 			$('.menuWrapper .menu .menuList').addClass('mobileMenuVisible');
-		}		
-	});
-	
-	$('.menuWrapper .menu .menuList .close, .menuWrapper .menu .menuList li, .menuWrapper .menu .menuList a').click(function(event) {
-		if ($(window).width() < 1065) {
-			$('.menuList.mobileMenuVisible').removeClass('mobileMenuVisible');
-		}
-	});
+			$('.mobile_menu_overlay').fadeIn(300);
+			/*$('.mobileMenuVisible').css({
+				'width': '50%',
+				'right': 0,
+				'transition': 'width 1s ease-in-out, right 1s ease-in-out'
+			)};*/
+		});
+		
+		// Close menu
+		$('.menuWrapper .menu .close, .menuWrapper .menu li, .menuWrapper .menu li a').click(function() {
+			$('.mobileMenuVisible').removeClass('mobileMenuVisible');
+			$('.mobile_menu_overlay').fadeOut(300);
+		});
+	}
 	//------------------------------------------------------------------------------------
 	
+	
+	/* ========================== */
+	/* ====== Header Image ====== */
+	/* ========================== */
+	$(function() {
+	
+	var headers = [
+		"images/headers/header_1.png",
+		"images/headers/header_2.png",
+		"images/headers/header_3.png"
+	];
+
+     var headerImage = Math.floor((Math.random() * 3));
+
+      $(".headerBanner").attr("src",headers[headerImage]);
+	});
 })
 
 
