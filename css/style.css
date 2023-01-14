@@ -510,6 +510,9 @@ input.purchase:hover {
 	margin: 0;
 	text-align: center;
 }
+.footer .link_custom {
+	color: var(--blue);
+}
 ul.links *:focus {
     outline: none;
 }
@@ -565,22 +568,12 @@ ul.links *:focus {
 /**********************/
 /* Terms And Services */
 /**********************/
-.tas_content .updateDate {
+.tas-title {
+	font-size: 2em;
+}
+.tas-container .column {font-family: var(--title-links-text);}
+.tas-container a.txt_link {
+	text-decoration: none;
 	color: var(--blue);
-	background-color: rgba(255, 255, 255, 0.1);
-	padding: 25px;
-}
-
-.tas_content .tas_index {
-	color: black;
-	position: fixed;
-	top: 50px;
-	left: 0;
-	padding: 25px 20px 25px 0px;
-	z-index: 100;
-	background-color: rgba(255, 255, 255, 0.5);
-}
-.tas_content .tas_index ul, .tas_content .tas_index ul li {
-	list-style-type: none;
 }
 

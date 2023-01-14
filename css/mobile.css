@@ -140,7 +140,7 @@
 	}
 	
 	/* Underline */
-	body .mobileMenuVisible li.category span:after {
+	body .mobileMenuVisible li.category span:after, body .mobileMenuVisible li.page_home span:after {
 		position: absolute;
         content: '';
         height: 2px;
@@ -150,7 +150,11 @@
 		background: var(--white);
 		transition: .5s;
 	}
-	body .mobileMenuVisible li.category:hover span:after, body .mobileMenuVisible li.category span:hover:after {
+	body .mobileMenuVisible li.page_home span:after {
+        margin: 1.75em auto 0px auto;
+	}
+	body .mobileMenuVisible li.category:hover span:after, body .mobileMenuVisible li.category span:hover:after,
+	body .mobileMenuVisible li.page_home:hover span:after, body .mobileMenuVisible li.page_home span:hover:after	{
 		width: 100%;
 		background: var(--blue);
 	}
@@ -167,4 +171,12 @@
 		transition: all 0.2s;
 	}
 	
+	
+	
+	/**********************/
+	/* Terms And Services */
+	/**********************/
+	.tas-title {
+		font-size: 2em;
+	}
 }
