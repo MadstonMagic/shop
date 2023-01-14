@@ -28,6 +28,7 @@
 	--015_black: rgba(255, 255, 255, 0.15);
 	--darkGray: rgba(26, 26, 26, 1);
 	--menu: rgba(35, 43, 51, 1);
+	--footer: rgba(35, 43, 51, 0.7);
 	--body: rgba(80, 94, 108, 1);
 	--posts: rgba(47, 58, 68, 1);
 	--menuMobile: rgba(56, 69, 82, 1);
@@ -492,19 +493,19 @@ input.purchase:hover {
 .footer .footer-main-container {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    grid-gap: 2px;
+    grid-gap: 0px;
 	width: 100%;
 	min-height: 350px;
-	background-color: rgba(43, 43, 43, 1);
+	background-color: var(--menu);
 	font-family: var(--title-links-text);
 }
 .footer .footer-main-container .column {
 	padding: 25px;
-	background-color: var(--darkGray);
+	background-color: var(--menu);
 }
 .footer .bottom-footer {
 	wiodth:100%;
-	background-color: var(--lightGray);
+	background-color: var(--footer);
 	padding-top: 15px;
 	margin: 0;
 	text-align: center;
@@ -552,7 +553,7 @@ ul.links *:focus {
 	width: 100%;
 	text-align: center;
 	font-size: 1.2em;
-	background-color: #000000;
+	background-color: var(--menu);
 	padding: 25px 0;
 }
 
