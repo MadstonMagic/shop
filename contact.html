@@ -42,31 +42,44 @@
 		
 		<!-- Header - Parallax -->
 		<div class="header">
-			<div class="slide">
-				<div class="slider_content">
-					<h1>MadstonMagic - 3D Model Shop</h1>
-					<p class="slider_text">Madston's Magic</p>
+			<div class="slider_content">
+				<img class="headerBanner" src="images/headers/header_1.png" alt="header_banner">
+				<div class="headerContent">
+					<h1>MadstonMagic - Portfolio &amp; Webshop</h1>
+					<p class="slider_text">3D Game Artist</p>
 				</div>
 			</div>
 		</div>
 		<!--------------------------------------------------------------------------------------------------------------->
 		<!-- Moving Menu ------------------------------------------------------------------------------------------------>
-		<!--------------------------------------------------------------------------------------------------------------->
+		<!--------------------------------------------------------------------------------------------------------------->		
+		<div class="mobile_menu_overlay"></div>
 		<div class="menuWrapper">
+			<!-- Mobile Menu Button -->
+			<div class="mobile-menu-button">
+				<span class="button"><i class="fa fa-bars"></i></span>
+			</div>
 			<div class="menu">
-				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">
+				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">				
 				<ul class="menuList">
+					<li class="menuList_item title-menu">Categories</li>
 					<li class="menuList_item category-title page_home"><a href="/shop/">Home</a></li>
-					<li class="menuList_item category-title page_contact">Contact</li>
+					<li class="menuList_item category-title page_contact"><span><a href="../shop/contact">Contact</a></span></li>
+					<i class="close hiddenLargeScreen fa fa-times"></i>
 				</ul>
 			</div>
 		</div>
 		<div class="stickyMenuWrapper">
+			<!-- Mobile Menu Button -->
+			<div class="mobile-menu-button">
+				<span class="button"><i class="fa fa-bars"></i></span>
+			</div>
 			<div class="menu">
 				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">
 				<ul class="menuList">
 					<li class="menuList_item category-title page_home"><a href="/shop/">Home</a></li>
-					<li class="menuList_item category-title page_contact">Contact</li>
+					<li class="menuList_item category-title page_contact"><span><a href="../shop/contact">Contact</a></span></li>
+					<i class="close hiddenLargeScreen fa fa-times"></i>
 				</ul>
 			</div>
 		</div>
@@ -81,12 +94,31 @@
 		<!------------------------>
 		<div class="posts-collection content-grid">
 			<div class="posts-main-container">
-			<div id="loading-text">Contact form is loading...</div>
+			
+			<div class="column" id="loading-text">Contact form is loading...</div>
 				<div class="cognito">
 					<script src="https://www.cognitoforms.com/s/SFG54W9Vi0ex0_GZmZf3zg"></script>
 					<script>Cognito.load("forms", { id: "2" });</script>
 				</div>
+				
+				<div class="column">
+					<h1 class="contactTitle">Let's get in touch!</h1>
+					<p>
+						I do not bite, I swear!
+						<br>
+						<br>
+						Fill in the form and let's get together to either get your question answered or your issue to be resolved!
+						<br>
+						<br>
+						If you would like to work together, you can send a message through this form as well. However, I will be more likely to respond sooner if you were to join the discord and mention me there!
+						<br>
+						<br>
+						<span class="txt_disclaimer">Disclaimer: Your information will never be shared. If you happen to get an email other than from me, disregard that message and let <a href="https://www.cognitoforms.com/supportrequest" target="_blank">CognitoForms</a> know.</span>
+					</p>
+				</div>
 			</div>
+			
+			
 		</div>
 		<!---------------------->
 		<!-- END CONTACT FORM -->
