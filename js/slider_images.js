@@ -1,14 +1,14 @@
 $(document).ready( function() {
 	/* ========================== */
 	/* ======= Index Page ======= */
-	/* ========================== */		
+	/* ========================== */
 	
 	// Pictures on the sub-pages
-	$('.click_trigger.image').on('click', function(selector) {
+	$('.click_trigger.image img').on('click', function(selector) {
 		
-		var source1 = $(this).find('.img1').attr('src');
-		var source2 = $(this).find('.img2').attr('src');
-		var source3 = $(this).find('.img3').attr('src');
+		var source1 = $('.click_trigger.image').find('.img1').attr('src');
+		var source2 = $('.click_trigger.image').find('.img2').attr('src');
+		var source3 = $('.click_trigger.image').find('.img3').attr('src');
 		
 		var sources = [source1, source2, source3];
 		var i = 0;
@@ -30,42 +30,23 @@ $(document).ready( function() {
 		}
 		
 		
-		//---------------------------------------------		
-		$('.next').on('click', function() {			
-			image.attr('src', nextItem() );		
-		});		
-		
-		
+
+		$('.next').on('click', function() {
+			image.attr('src', nextItem() );
+		});
 		
 		$('#imgLarge .background').on('click', function (){
 			closeImg();
-		});		
+		});
 		$('#imgLarge .exit').on('click', function() {
 			closeImg();
 		});
 		
-		function closeImg() {			
+		function closeImg() {
 			$('#imgLarge').removeClass('visible');
 			$('#imgLarge').addClass('hidden');
-			$('#imgLarge').fadeOut(300);			
+			$('#imgLarge').fadeOut(300);
 		}
 	});	
 	//-----------------------------------------------------------------------------------
-	
-	
-	$('.click_trigger.video').on('click', function() { 
-	
-		$('.videoOpened').fadeIn(300);
-		$('.videoOpened').addClass('visible');
-		$('.videoOpened').removeClass('hidden');
-		
-		window.open('https://www.youtube.com/watch?v=CEpgqnER5PU','_blank').focus();
-	
-	
-		$('.videoOpened .exit').on('click', function() {
-			$('.videoOpened').removeClass('visible');
-			$('.videoOpened').addClass('hidden');
-			$('.videoOpened').fadeOut(300);	
-		});
-	});
 })

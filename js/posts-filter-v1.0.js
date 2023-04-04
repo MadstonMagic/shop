@@ -4,8 +4,8 @@ $(document).ready(function(){
 	//-------------------
 	$('.cat_all').on('click',function() {
 		
-		$('.menuList_item').css("color", "var(--blue)");
-		$('.cat_all').css("color", "var(--white)");
+		//$('.menuList_item').css("color", "var(--blue)");
+		//$('.cat_all').css("color", "var(--white)");
 		$('.single-post.all').css("display","block");
 	});
 	
@@ -14,8 +14,8 @@ $(document).ready(function(){
 	//-------------------
 	$('.cat_firearms').on('click',function() {
 		
-		$('.menuList_item').css("color", "var(--blue)");
-		$('.cat_firearms').css("color", "var(--white)");
+		//$('.menuList_item').css("color", "var(--blue)");
+		//$('.cat_firearms').css("color", "var(--white)");
 		$('.single-post.all').css("display","none");
 		$('.single-post.firearms').css("display","block");
 	});
@@ -25,8 +25,8 @@ $(document).ready(function(){
 	//-------------------
 	$('.cat_weaponry').on('click',function() {
 		
-		$('.menuList_item').css("color", "var(--blue)");
-		$('.cat_weaponry').css("color", "var(--white)");
+		//$('.menuList_item').css("color", "var(--blue)");
+		//$('.cat_weaponry').css("color", "var(--white)");
 		$('.single-post.all').css("display","none");
 		$('.single-post.weaponry').css("display","block");
 	});
@@ -36,8 +36,8 @@ $(document).ready(function(){
 	//-------------------
 	$('.cat_creatures').on('click',function() {
 		
-		$('.menuList_item').css("color", "var(--blue)");
-		$('.cat_creatures').css("color", "var(--white)");
+		//$('.menuList_item').css("color", "var(--blue)");
+		//$('.cat_creatures').css("color", "var(--white)");
 		$('.single-post.all').css("display","none");
 		$('.single-post.creatures').css("display","block");
 	});
@@ -47,9 +47,20 @@ $(document).ready(function(){
 	//-------------------
 	$('.cat_misc').on('click',function() {
 		
-		$('.menuList_item').css("color", "var(--blue)");
-		$('.cat_misc').css("color", "var(--white)");
+		//$('.menuList_item').css("color", "var(--blue)");
+		//$('.cat_misc').css("color", "var(--white)");
 		$('.single-post.all').css("display","none");
 		$('.single-post.misc').css("display","block");
+	});
+	
+	//-------------------
+	//Show Game Assets Only
+	//-------------------
+	$('.cat_gameassets').on('click',function() {
+		
+		//$('.menuList_item').css("color", "var(--blue)");
+		//$('.cat_misc').css("color", "var(--white)");
+		$('.single-post.all').css("display","none");
+		$('.single-post.gameassets').css("display","block");
 	});
 });

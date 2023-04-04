@@ -1,53 +1,62 @@
-.content-grid .cognito, .content-grid .cognito .c-field  {
-    margin: 0 !important;
-	max-width: 100% !important;
-	width: 100% !important;
+form.cog-form {
+    width: 100% !important;
 }
-/* Removing the Watermark */
-.cognito div[style="display:block!important;text-align:center!important;padding:2px!important;max-width:800px!important;opacity:1!important;"] {
-    height: 0;
-    position: absolute;
-    top: -100%;
-    left: -100%;
-}
-body .content-grid .cognito .c-forms-form .c-validation, body .content-grid .cognito .c-forms-form .c-error:after, body .content-grid .cognito .c-forms-form .c-table .c-error .toggle-on:after, body .content-grid .cognito .c-forms-form .c-validation-icon {
-    /*background-color: rgb(35 0 0) !important;*/
-	background-color: var(--blue) !important;;
-    padding: 10px;
-}
-
-body .content-grid .cognito textarea[placeholder="Message"] {
-    min-height: 150px;
-    max-height: 350px;
-}
-
-body .content-grid .cognito * {
-	outline: none;
-	border: none;
-}
-
-body .cognito option {
-    background-color: rgb(0 0 0) !important;
-    color: rgb(255 255 255) !important;
-    font-size: 14px;
-}
-
-body .content-grid .cognito .c-forms-form button:not(.c-icon-button), body .content-grid .cognito .c-forms-form .c-add-item, body .content-grid .cognito .c-forms-form input[type=button], body .content-grid .cognito .c-forms-form .c-fileupload-dropzone .c-upload-button button {
-    background-color: var(--blue) !important;
-    color: rgb(255 255 255) !important;
-    font-size: 14px;
-	font-family: var(--title-links-text);
-}
-
-body .content-grid .cognito label {
-	font-family: var(--title-links-text);	
-    font-size: 18px;
-}
-body .content-grid .c-forms-description {display:none;}
-body .content-grid .c-forms-form-title h2 {
-	font-family: var(--sub-title) !important;
-    font-size: 36px !important;	
+form.cog-form input {
+	background-color: var(--menu) !importrant;
 }
 div#loading-text {
     font-size: 32px;
+}
+.el-select-dropdown ul li {
+	color: var(--blue) !important;
+	background-color: var(--menu) !important;
+}
+.cog-branding, .cog-abuse {
+	display: none !important;
+}
+
+
+/* Grid Contact Page */
+.content-grid {
+	width: 100%;
+	padding: 50px 200px;
+}
+.content-grid .column {
+    width: 100%;
+	font-family: var(--title-links-text);
+	font-weight: 100;
+	font-style: normal;
+}
+.contactTitle {
+	font-size: 3em;
+}
+.txt_disclaimer, .txt_disclaimer a {
+	font-size: 10px;
+	font-style: italic;
+}
+.txt_disclaimer a {
+	color: var(--blue);
+	text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 1440px)  {
+
+	/* Grid Contact Page */
+	.content-grid {
+		width: 50%;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%,0);
+		padding: 50px 50%;
+	}
+	.content-grid .column {
+		width: 100%;
+		font-family: var(--title-links-text);
+		font-weight: 100;
+		font-style: normal;
+	}
+
 }

@@ -3,9 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		
-		<meta name="link" content="https://drive.google.com/uc?export=download&id=17kztO2m1rnb-epkSth0ihpcUV--Uncw9" >
-		
+			
 		<title>MadstonMagic - 3D Shop</title>
 		<link rel="icon" type="image/png" href="https://madstonmagic.github.io/shop/images/favicon.png">
 		<meta name="description" content="MadstonMagic - 3D Shop">
@@ -40,8 +38,9 @@
 		
 		<!-- Enlarged Image -->
 		<div id="imgLarge">
-			<ul class="next">
-				<li>Next Image</li>
+			<ul class="controls">
+				<!--<li class="prev">&#8882;</li>-->
+				<li class="next">&#8883;</li>
 			</ul>
 			<div class="background"></div>
 			<img class="imgMiddle" src="">
@@ -54,13 +53,17 @@
 		<!-- Header - Parallax -->
 		<div class="header">
 			<div class="slider_content">
-					<h1>MadstonMagic - 3D Model Shop</h1>
-					<p class="slider_text">Madston's Magic</p>
+				<img class="headerBanner" src="images/headers/header_1.png" alt="header_banner">
+				<div class="headerContent">
+					<h1>MadstonMagic - Portfolio &amp; Webshop</h1>
+					<p class="slider_text">3D Game Artist</p>
 				</div>
+			</div>
 		</div>
 		<!--------------------------------------------------------------------------------------------------------------->
 		<!-- Moving Menu ------------------------------------------------------------------------------------------------>
-		<!--------------------------------------------------------------------------------------------------------------->
+		<!--------------------------------------------------------------------------------------------------------------->		
+		<div class="mobile_menu_overlay"></div>
 		<div class="menuWrapper">
 			<!-- Mobile Menu Button -->
 			<div class="mobile-menu-button">
@@ -69,12 +72,14 @@
 			<div class="menu">
 				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">				
 				<ul class="menuList">
-					<li class="menuList_item category-title cat_all">Show All</li>
-					<li class="menuList_item category-title cat_firearms">Firearms</li>
-					<li class="menuList_item category-title cat_weaponry">Weaponry</li>
-					<li class="menuList_item category-title cat_creatures">Creatures</li>
-					<li class="menuList_item category-title cat_misc">Misc</li>
-					<li class="menuList_item category-title page_contact"><a href="../shop/contact">Contact</a></li>
+					<li class="menuList_item title-menu">Categories</li>
+					<li class="menuList_item category-title category cat_all"><span>Show All</span></li>
+					<li class="menuList_item category-title category cat_firearms"><span>Firearms</span></li>
+					<li class="menuList_item category-title category cat_weaponry"><span>Weaponry</span></li>
+					<li class="menuList_item category-title category cat_creatures"><span>Creatures</span></li>
+					<li class="menuList_item category-title category cat_misc"><span>Misc</span></li>
+					<li class="menuList_item category-title category cat_gameassets"><span>Game Assets</span></li>
+					<li class="menuList_item category-title page_contact"><span><a href="../shop/contact">Contact</a></span></li>
 					<i class="close hiddenLargeScreen fa fa-times"></i>
 				</ul>
 			</div>
@@ -84,17 +89,16 @@
 			<div class="mobile-menu-button">
 				<span class="button"><i class="fa fa-bars"></i></span>
 			</div>
-			
 			<div class="menu">
 				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">
-				
 				<ul class="menuList">
-					<li class="menuList_item category-title cat_all">Show All</li>
-					<li class="menuList_item category-title cat_firearms">Firearms</li>
-					<li class="menuList_item category-title cat_weaponry">Weaponry</li>
-					<li class="menuList_item category-title cat_creatures">Creatures</li>
-					<li class="menuList_item category-title cat_misc">Misc</li>
-					<li class="menuList_item category-title page_contact"><a href="../shop/contact">Contact</a></li>
+					<li class="menuList_item category-title category cat_all"><span>Show All</span></li>
+					<li class="menuList_item category-title category cat_firearms"><span>Firearms</span></li>
+					<li class="menuList_item category-title category cat_weaponry"><span>Weaponry</span></li>
+					<li class="menuList_item category-title category cat_creatures"><span>Creatures</span></li>
+					<li class="menuList_item category-title category cat_misc"><span>Misc</span></li>
+					<li class="menuList_item category-title category cat_gameassets"><span>Game Assets</span></li>
+					<li class="menuList_item category-title page_contact"><span><a href="../shop/contact">Contact</a></span></li>
 					<i class="close hiddenLargeScreen fa fa-times"></i>
 				</ul>
 			</div>
@@ -120,137 +124,102 @@
 					</div>
 					
 					<div class="category-ribbon">
-						<span class="category-name">Firearms</span>
-						<span class="price">&euro; 30 <span class="taxes">excl. 1,37% VAT</span></span> 
+						<span class="category-name"><span class="cat_bold">Categories: </span>Firearms</span>
+						<span class="price">&euro; 30</span>
 					</div>
 
 					<div class="post-content">
-						<h1>Call Of Duty - MW3 Pack</h1>
-						<p>
-							<div>
-								<span class="contents-click">
-									<p>View Pack Contents</p>
-									<div class="contents-wrapper">
-										<ul class="visibleContents">
-											<li>Low Poly UMP-45</li>
-											<li>Low Poly MP9</li>
-											<li>Low Poly P90</li>
-											<li>Low Poly ACR 6.8</li>
-											<li>Low Poly M4A1</li>
-											<li>Low Poly L86 LSW</li>
-											<li>Low Poly Striker</li>
-										</ul>
+						<table>
+						<!-- Title -->
+							<tr>
+								<td><h1>Call Of Duty - MW3 Pack</h1></td>
+							</tr>
+							<!-- Pack Contents -->
+							<tr>
+								<td>
+									<span class="contents-click">
+										<p>View Pack Contents</p>
+										<div class="contents-wrapper">
+											<ul class="visibleContents">
+												<li>Low Poly Minecraft - UMP-45</li>
+												<li>Low Poly Minecraft - MP9</li>
+												<li>Low Poly Minecraft - P90</li>
+												<li>Low Poly Minecraft - ACR 6.8</li>
+												<li>Low Poly Minecraft - M4A1</li>
+												<li>Low Poly Minecraft - L86 LSW</li>
+												<li>Low Poly Minecraft - Striker</li>
+											</ul>
+										</div>
+									</span>
+								</td>
+							</tr>
+							<!-- Pack Compatibility -->
+							<tr>
+								<td>
+									<div class="versions">
+										<span class="version-click">
+											<p>View Version Compatibility</p>
+											<div class="contents-wrapper">
+												<ul class="visibleCompatibilities">
+													<li><span class="1_8 incompatible">1.8+</span></li>
+													<li><span class="1_9 incompatible">1.9+</span></li>
+													<li><span class="1_12 compatible">1.12+</span></li>
+													<li><span class="1_13 compatible">1.13+</span></li>
+													<li><span class="1_14 compatible">1.14+</span></li>							
+													<li><span class="1_18 incompatible">1.18+</span></li>							
+												</ul>
+											</div>
+										</span>
 									</div>
-								</span>
-							</div>
-						</p>
-						
-						<div class="versions">						
-							<h1>Version Compatibility</h1>
-							<p>
-								<ul>
-									<li><span class="1_8 incompatible">1.8+</span></li>
-									<li><span class="1_9 incompatible">1.9+</span></li>
-									<li><span class="1_12 compatible">1.12+</span></li>
-									<li><span class="1_13 compatible">1.13+</span></li>
-									<li><span class="1_14 compatible">1.14+</span></li>							
-								</ul>
-							</p>
-						</div>					
+								</td>
+							</tr>
+							<!-- Images -->
+							<tr>
+								<td>
+									<div class="process">
+										<div class="inner">
+											<h2>More Images</h2>
+											<div class="image-slider-wrapper">
+												<div class="click_trigger image" title="Click to view the images">
+													<div class="image">
+														<img class="img1" src="../shop/images/shop/cod_mw3_pack_2.png" alt="COD MW3 Pack">
+													</div>
+													<div class="image">
+														<img class="img2" src="../shop/images/shop/cod_mw3_pack_3.png" alt="COD MW3 Pack">
+													</div>
+													<div class="image">
+														<img class="img3" src="../shop/images/shop/cod_mw3_pack_4.png" alt="COD MW3 Pack">
+													</div>
+												</div>								
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<!-- Purchase Button -->
+							<tr>
+								<td>
+									<div class="links_bottom">
+										<div class="btn_purchase">
+											<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+												<input type="submit" value="Purchase Now!" class="purchase">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="9GQUK2F73DTDJ">
+											</form>	
+										</div>
+									</div>	
+								</td>
+							</tr>
+						</table>
 					</div>
-					<!-- Progression images -------------->
-					<div class="process">
-						<div class="inner">
-							<h2>More Images</h2>
-							<div class="image-slider-wrapper">
-								<div class="click_trigger image" title="Click to view the images">
-									<div class="image">
-										<img class="img1" src="../shop/images/shop/cod_mw3_pack_2.png" alt="COD MW3 Pack">
-									</div>
-									<div class="image">
-										<img class="img2" src="../shop/images/shop/cod_mw3_pack_3.png" alt="COD MW3 Pack">
-									</div>
-									<div class="image">
-										<img class="img3" src="../shop/images/shop/cod_mw3_pack_4.png" alt="COD MW3 Pack">
-									</div>
-								</div>								
-							</div>
-						</div>
-					</div>
-					<!-- Purchase Button -->
-					<div class="links_bottom">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-							<input type="submit" value="Purchase Now!" class="purchase">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="9GQUK2F73DTDJ">
-						</form>						
-					</div>						
 				</div>
 				<!------------------------------------------------------------------------------------------->
 				<!-- End COD MW3 - Weaponry Pack ------------------------------------------------------------>
 				<!------------------------------------------------------------------------------------------->
 				
 				
-				
 				<!------------------------------------------------------------------------------------------->
-				<!-- Glock 18 C - Low Poly ------------------------------------------------------------------>
-				<!------------------------------------------------------------------------------------------->
-				<div class="all firearms single-post" id="glock-18">					
-					<div class="post-img">
-						<div class="vergroot-glas"><i class="fa fa-expand-alt"></i></div>
-						<img class="content-img" src="../shop/images/shop/glock18_c.png" alt="post">
-					</div>
-					
-					<div class="category-ribbon">
-						<span class="category-name">Firearms</span>
-						<span class="price">&euro; 7,50 <span class="taxes">excl. 1,37% VAT</span></span> 
-					</div>
-
-					<div class="post-content">
-						<h1>Glock 18c - 3D Model</h1>
-						<p>
-							<div>
-								<span class="contents-click">
-									<p>View Pack Contents</p>
-									<div class="contents-wrapper">
-										<ul class="visibleContents">
-											<li>1x Low Poly Glock 18c</li>
-										</ul>
-									</div>
-								</span>
-							</div>
-						</p>
-						
-						<div class="versions">						
-							<h1>Version Compatibility</h1>
-							<p>
-								<ul>
-									<li><span class="1_8 incompatible">1.8+</span></li>
-									<li><span class="1_9 incompatible">1.9+</span></li>
-									<li><span class="1_12 incompatible">1.12+</span></li>
-									<li><span class="1_13 incompatible">1.13+</span></li>
-									<li><span class="1_14 compatible">1.14+</span></li>							
-								</ul>
-							</p>
-						</div>					
-					</div>					
-					<!-- Purchase Button -->
-					<div class="links_bottom">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-							<input type="submit" value="Purchase Now!" class="purchase">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="6QK4DMNGUJ7RC">
-						</form>						
-					</div>	
-				</div>
-				<!------------------------------------------------------------------------------------------->
-				<!-- End Glock 18 C - Low Poly -------------------------------------------------------------->
-				<!------------------------------------------------------------------------------------------->
-				
-				
-				
-				<!------------------------------------------------------------------------------------------->
-				<!-- Bechowiec-1 ---------------------------------------------------------------------------->
+				<!-- Bechowiec - Singular Model ------------------------------------------------------------->
 				<!------------------------------------------------------------------------------------------->
 				<div class="all firearms single-post" id="bechowiec">					
 					<div class="post-img">
@@ -259,144 +228,88 @@
 					</div>
 					
 					<div class="category-ribbon">
-						<span class="category-name">Firearms</span>
-						<span class="price">&euro; 30 <span class="taxes">excl. 1,37% VAT</span></span> 
+						<span class="category-name"><span class="cat_bold">Categories: </span>Firearms</span>
+						<span class="price">&euro; 36</span> 
 					</div>
 
 					<div class="post-content">
-						<h1>Bechowiec-1 - 3D Model</h1>
-						<p>
-							<div>
-								<span class="contents-click">
-									<p>View Pack Contents</p>
-									<div class="contents-wrapper">
-										<ul class="visibleContents">
-											<li>1x Bechowiec 3D Model</li>
-										</ul>
+						<table>
+						<!-- Title -->
+							<tr>
+								<td><h1>Bechowiec</h1></td>
+							</tr>
+							<!-- Pack Contents -->
+							<tr>
+								<td>
+									<span class="contents-click">
+										<p>View Pack Contents</p>
+										<div class="contents-wrapper">
+											<ul class="visibleContents">
+												<li>Low Poly Minecraft Bechowiech</li>
+											</ul>
+										</div>
+									</span>
+								</td>
+							</tr>
+							<!-- Pack Compatibility -->
+							<tr>
+								<td>
+									<div class="versions">
+										<span class="version-click">
+											<p>View Version Compatibility</p>
+											<div class="contents-wrapper">
+												<ul class="visibleCompatibilities">
+													<li><span class="1_8 incompatible">1.8+</span></li>
+													<li><span class="1_9 incompatible">1.9+</span></li>
+													<li><span class="1_12 incompatible">1.12+</span></li>
+													<li><span class="1_13 incompatible">1.13+</span></li>
+													<li><span class="1_14 compatible">1.14+</span></li>							
+													<li><span class="1_18 incompatible">1.18+</span></li>							
+												</ul>
+											</div>
+										</span>
 									</div>
-								</span>
-							</div>
-						</p>
-						
-						<div class="versions">						
-							<h1>Version Compatibility</h1>
-							<p>
-								<ul>
-									<li><span class="1_8 incompatible">1.8+</span></li>
-									<li><span class="1_9 incompatible">1.9+</span></li>
-									<li><span class="1_12 incompatible">1.12+</span></li>
-									<li><span class="1_13 incompatible">1.13+</span></li>
-									<li><span class="1_14 compatible">1.14 - 1.17</span></li>
-							</p>
-						</div>					
-					</div>	
-					<!-- Progression images -------------->
-					<div class="process">
-						<div class="inner">
-							<h2>Video</h2>
-							<div class="image-slider-wrapper">
-								<div class="click_trigger video" title="Click to view the images">
-									<div class="image">
-										<div class="videoWrapper">
-											<i class="fa fa-play playbutton"></i>
-											<img class="img1" src="../shop/images/shop/bechowiec_thumbnail.png" alt="COD MW3 Pack">
+								</td>
+							</tr>
+							<!-- Images -->
+							<tr>
+								<td>
+									<div class="process">
+										<div class="inner">
+											<h2>Videos</h2>
+											<div class="image-slider-wrapper">
+												<div class="click_trigger image" title="Click to view the images">
+													<div class="image video">
+														<a href="https://www.youtube.com/watch?v=CEpgqnER5PU" target="_blank"><img class="img1" src="../shop/images/shop/bechowiec_thumbnail.png" alt="Bechowiec"></a>
+													</div>
+													
+												</div>								
+											</div>
 										</div>
 									</div>
-								</div>								
-							</div>
-						</div>
-					</div>				
-					<!-- Purchase Button -->
-					<div class="links_bottom">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-							<input type="submit" value="Purchase Now!" class="purchase">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="QRAH5898VQYN2">
-						</form>					
-					</div>	
+								</td>
+							</tr>
+							<!-- Purchase Button -->
+							<tr>
+								<td>
+									<div class="links_bottom">
+										<div class="btn_purchase">
+											<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+												<input type="submit" value="Purchase Now!" class="purchase">
+												<input type="hidden" name="cmd" value="_s-xclick">
+												<input type="hidden" name="hosted_button_id" value="QRAH5898VQYN2">
+											</form>		
+										</div>
+									</div>	
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 				<!------------------------------------------------------------------------------------------->
-				<!-- End Bechowiec-1 ------------------------------------------------------------------------>
+				<!-- End Bechowiec -------------------------------------------------------------------------->
 				<!------------------------------------------------------------------------------------------->
-				
-				
-				<!------------------------------------------------------------------------------------------->
-				<!-- Glock 18 C - Low Poly ------------------------------------------------------------------>
-				<!------------------------------------------------------------------------------------------->
-				<div class="all misc single-post" id="glock-18">					
-					<div class="post-img">
-						<div class="vergroot-glas"><i class="fa fa-expand-alt"></i></div>
-						<img class="content-img" src="../shop/images/shop/cosmetics_low_poly.png" alt="post">
-					</div>
-					
-					<div class="category-ribbon">
-						<span class="category-name">Miscellaneous</span>
-						<span class="price">&euro; t.b.a <span class="taxes">excl. 1,37% VAT</span></span> 
-					</div>
-
-					<div class="post-content">
-						<h1>Cosmetics Pack</h1>
-						<p>
-							<div>
-								<span class="contents-click">
-									<p>View Pack Contents</p>
-									<div class="contents-wrapper">
-										<ul class="visibleContents">
-											<li>t.b.a.</li>
-										</ul>
-									</div>
-								</span>
-							</div>
-						</p>
-						
-						<div class="versions">						
-							<h1>Version Compatibility</h1>
-							<p>
-								<ul>
-									<li><span class="1_8 incompatible">1.8+</span></li>
-									<li><span class="1_9 incompatible">1.9+</span></li>
-									<li><span class="1_12 incompatible">1.12+</span></li>
-									<li><span class="1_13 incompatible">1.13+</span></li>
-									<li><span class="1_14 compatible">1.14+</span></li>							
-								</ul>
-							</p>
-						</div>
-						<!-- Progression images -------------->
-						<div class="process">
-							<div class="inner">
-								<h2>More Images</h2>
-								<div class="image-slider-wrapper">
-									<div class="click_trigger image" title="Click to view the images">
-										<div class="image">
-											<img class="img1" src="../shop/images/shop/cosmetics_1.png" alt="Cosmetics - Hats & Masks">
-										</div>
-										<div class="image">
-											<img class="img2" src="../shop/images/shop/cosmetics_2.png" alt="Cosmetics - Hats & Masks">
-										</div>
-										<div class="image">
-											<img class="img3" src="../shop/images/shop/cosmetics_3.png" alt="Cosmetics - Hats & Masks">
-										</div>
-									</div>								
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Purchase Button -->
-					<!--<div class="links_bottom">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-							<input type="submit" value="Purchase Now!" class="purchase">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="6QK4DMNGUJ7RC">
-						</form>						
-					</div>-->
-				</div>
-				<!------------------------------------------------------------------------------------------->
-				<!-- End Glock 18 C - Low Poly -------------------------------------------------------------->
-				<!------------------------------------------------------------------------------------------->
-				
-				
-				
-			</div>	
+			</div>
 		</div>
 		
 		<div class="videoOpened hidden">
@@ -417,32 +330,29 @@
 			<div class="footer-main-container">
 				<div class="column">
 					<h2> Socials </h2>
-					<ul class="links left">
-						<li><a href="https://discordapp.com/invite/npT2wBK" target="_blank"><img title="Join the Discord!" alt="Discord" src="../shop/images/icons/discord.png"></a></li>
-						<li><a href="https://twitter.com/MadstonMagic" target="_blank"><img title="Follow me on Twitter." alt="Twitter" src="../shop/images/icons/twitter.png"></a></li>
-						<li><a href="https://www.planetminecraft.com/member/madstonmagic/" target="_blank"><img title="Check out my PMC!" alt="PMC" src="../shop/images/icons/planet_minecraft.png"></a></li>
-					</ul>
-					<ul class="links right">
-						<li><a href="https://www.instagram.com/madstonmagicofficial/" target="_blank"><img title="In case you want to follow" alt="Instagram" src="../shop/images/icons/instagram.png"></a></li>
-						<li>
-							<form action="https://www.paypal.com/donate" method="post" target="_blank">
-								<input type="hidden" name="hosted_button_id" value="X25ARQSCKBD68" />
-								<input onclick="openNewWindow()" type="image" src="../shop/images/icons/donate.png" border="0" name="submit" title="Donate with PayPal. The safer, easier way to pay online!" alt="Donate with PayPal" />
-							</form>
-						</li>
-						<li><a href="https://www.patreon.com/MadstonMagic" target="_blank"><img title="Support me on Patreon!" alt="Patreon" src="../shop/images/icons/patreon.png"></a></li>
-					</ul>
-					
+					<div class="socialsList">
+						<ul class="links left">
+							<li><a href="https://discordapp.com/invite/npT2wBK" target="_blank"><img title="Join the Discord!" alt="Discord" src="../shop/images/icons/discord.png"></a></li>
+							<li><a href="https://twitter.com/MadstonMagic" target="_blank"><img title="Follow me on Twitter." alt="Twitter" src="../shop/images/icons/twitter.png"></a></li>
+							<li><a href="https://www.planetminecraft.com/member/madstonmagic/" target="_blank"><img title="Check out my PMC!" alt="PMC" src="../shop/images/icons/planet_minecraft.png"></a></li>
+						</ul>
+						<ul class="links right">
+							<li><a href="https://www.instagram.com/madstonmagicofficial/" target="_blank"><img title="In case you want to follow" alt="Instagram" src="../shop/images/icons/instagram.png"></a></li>
+							<li>
+								<form action="https://www.paypal.com/donate" method="post" target="_blank">
+									<input type="hidden" name="hosted_button_id" value="X25ARQSCKBD68" />
+									<input onclick="openNewWindow()" type="image" src="../shop/images/icons/donate.png" border="0" name="submit" title="Donate with PayPal. The safer, easier way to pay online!" alt="Donate with PayPal" />
+								</form>
+							</li>
+							<li><a href="https://www.patreon.com/MadstonMagic" target="_blank"><img title="Support me on Patreon!" alt="Patreon" src="../shop/images/icons/patreon.png"></a></li>
+						</ul>
+					</div>
 				</div>
 				
 				<div class="column">
 					<h2> Terms and Services </h2>
 					<ul class="links">
 						<li><a class="link_custom" href="../shop/terms-and-services" target="_self">Terms And Services</a></li>
-						<li>&nbsp;</li>
-						<li><a class="link_custom" href="../shop/privacy" target="_self">Privacy</a></li>
-						<li>&nbsp;</li>
-						<li><a class="link_custom" href="../shop/disclaimer" target="_self">Disclaimer</a></li>
 					</ul>
 				</div>
 				
@@ -464,9 +374,7 @@
 				<div class="column">
 					<h2> Contact </h2>
 					<ul class="links">
-						<li>Join the discord and ask around. You can also always send me a DM.</li>
-						<li>&nbsp;</li>
-						<li>Email is always open! <a class="link_custom" href="mailto:madstonpack@gmail.com?Subject=Contact%20MadstonMagic">madstonpack@gmail.com</a></li>
+						<li>Join the <a class="link_custom" href="https://discordapp.com/invite/npT2wBK" target="_blank">discord</a> and ask around. You can also always send me a DM.</li>
 						<li>&nbsp;</li>
 						<li><a class="link_custom" href="../shop/contact" target="_self">Contact Page</a></li>
 					</ul>
