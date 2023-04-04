@@ -527,22 +527,34 @@ ul.links *:focus {
 /**********************/
 /* Terms And Services */
 /**********************/
+.show_index {
+	position: relative;
+}
 .tas_content .updateDate {
 	color: var(--blue);
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 25px;
 }
 
-.tas_content .tas_index {
+.tas_index {
+	display: none;
 	color: black;
-	position: fixed;
+	position: absolute;
 	top: 50px;
 	left: 0;
 	padding: 25px 20px 25px 0px;
 	z-index: 10000;
-	background-color: rgba(255, 255, 255, 0.5);
+	width: 300px;
+	background-color: var(--blue);
 }
-.tas_content .tas_index ul, .tas_content .tas_index ul li {
+.tas_index ul, .tas_index ul li {
 	list-style-type: none;
+	cursor: initial;
+	text-align: left;
 }
-
+.tas_index ul, .tas_index ul li.close_tas_index {
+	cursor: pointer;
+}
+ol.terms li {
+	padding: 10px 0;
+}

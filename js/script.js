@@ -11,6 +11,15 @@ $(document).ready( function() {
 	//-----------------------------------------------------------------------------------
 		
 	
+	/* ================================ */
+	/* ======= Terms & Services ======= */
+	/* ================================ */
+	
+	
+	
+	//-----------------------------------------------------------------------------------
+		
+	
 	/* ======================== */
 	/* ======= Subpages ======= */
 	/* ======================== */		
@@ -95,8 +104,10 @@ $(document).ready( function() {
 		count = 0;
 		textArray = [
 			'Madston\'s Magic',
-			'Tip: Click on the images to enlarge them.',
-			'3D modeler of Minecraft Java models',
+			'Tip: Click on the images to take a close look.',
+			'3D modeller of Minecraft Java models',
+			'Rookie Video Game modeller',
+			'It\s MADSTON, not Mad Stone \>\:\(',
 			'Fulltime PC user',
 			'Addicted to looking at pictures of cool games I can\'t afford',
 			'Professional Gaming Chair user.'
@@ -130,19 +141,3 @@ $(document).ready( function() {
 	//------------------------------------------------------------------------------------
 	
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
