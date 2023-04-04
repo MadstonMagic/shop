@@ -7,15 +7,18 @@
 		<title>MadstonMagic - 3D Shop</title>
 		<meta name="description" content="MadstonMagic - 3D Shop">
 		<meta name="author" content="MadstonMagic">
-
-		<script src="../shop/js/jquery-3.6.4.min.js"></script>
-		<script src="../shop/js/script.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.js"></script>
-
+		<link rel="icon" type="image/png" href="https://madstonmagic.github.io/shop/images/favicon.png">
+		
 		<link rel="stylesheet" href="../shop/css/style.css">
 		<link rel="stylesheet" href="../shop/css/mobile.css">
 		<link rel="stylesheet" href="https://use.typekit.net/chc7dqq.css">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css">
+		
+		<script src="../shop/js/jquery-3.6.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.js"></script>
+		<script src="../shop/js/script.js"></script>
+		<script src="../shop/js/contact_form.js"></script>
+		
 	</head>
 	
 	<!-- Body Content -->
@@ -39,33 +42,44 @@
 		
 		<!-- Header - Parallax -->
 		<div class="header">
-			<div class="slide">
-				<div class="slider_content">
-					<h1>MadstonMagic - 3D Model Shop</h1>
-					<p class="slider_text">Madston's Magic</p>
+			<div class="slider_content">
+				<img class="headerBanner" src="images/headers/header_1.png" alt="header_banner">
+				<div class="headerContent">
+					<h1>MadstonMagic - Portfolio &amp; Webshop</h1>
+					<p class="slider_text">3D Game Artist</p>
 				</div>
 			</div>
 		</div>
 		<!--------------------------------------------------------------------------------------------------------------->
 		<!-- Moving Menu ------------------------------------------------------------------------------------------------>
-		<!--------------------------------------------------------------------------------------------------------------->
+		<!--------------------------------------------------------------------------------------------------------------->		
+		<div class="mobile_menu_overlay"></div>
 		<div class="menuWrapper">
+			<!-- Mobile Menu Button -->
+			<div class="mobile-menu-button">
+				<span class="button"><i class="fa fa-bars"></i></span>
+			</div>
 			<div class="menu">
-				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">
+				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">				
 				<ul class="menuList">
-					<li class="menuList_item category-title show_index" >Show Index</li>
+					<li class="menuList_item title-menu">Categories</li>
 					<li class="menuList_item category-title page_home"><a href="/shop/">Home</a></li>
-					<li class="menuList_item category-title page_contact"><a href="../shop/contact">Contact</a></li>
+					<li class="menuList_item category-title page_contact"><span><a href="../shop/contact">Contact</a></span></li>
+					<i class="close hiddenLargeScreen fa fa-times"></i>
 				</ul>
 			</div>
 		</div>
 		<div class="stickyMenuWrapper">
+			<!-- Mobile Menu Button -->
+			<div class="mobile-menu-button">
+				<span class="button"><i class="fa fa-bars"></i></span>
+			</div>
 			<div class="menu">
 				<img alt="logo" class="logo" src="../shop/images/logo_900x409.png">
 				<ul class="menuList">
-					<li class="menuList_item category-title show_index" >Show Index</li>
-					<li class="menuList_item category-title page_home"><a href="/shop/">Home</a></li>
-					<li class="menuList_item category-title page_contact"><a href="../shop/contact">Contact</a></li>
+					<li class="menuList_item category-title page_home"><span><a href="/shop/">Home</a></span></li>
+					<li class="menuList_item category-title page_contact"><span><a href="../shop/contact">Contact</a></span></li>
+					<i class="close hiddenLargeScreen fa fa-times"></i>
 				</ul>
 			</div>
 		</div>
@@ -74,40 +88,78 @@
 		<!--------------------------------------------------------------------------------------------------------------->
 		
 		
-		<!----------------------->
-		<!---- Content Table ---->
-		<!----------------------->
-		<div class="tas_content">
-			<div>
-				<h1>Terms and services</h1>	
-				<p>
-					<br />
-					<span class="updateDate">Updated: 15-05-2022</span>
-				</p>
-				<br />
+		
+		<!------------------------>
+		<!-- START CONTACT FORM -->
+		<!------------------------>
+		<div class="posts-collection content-grid">
+			<div class="posts-main-container tas-container">
+				<div class="column">
+				<h1 class="tas-title">Terms And Services</h1>
+					<h3>1) Buying from this website</h3>
+					<p>
+						When purchasing from this website, you agree to a certain points to be mentioned further on this page. To make a purchase you simply click the blue button underneath any post on the main page. You will be directed to PayPal where you can purchase a direct download immediately and safely.
+						<br>
+						<br>
+						In case you happen to lose the product you have purchased, you will need to contact me through the form on the <a class="txt_link" href="../shop/contact">contact</a> page. To get access to the file you have lost, you will need to provide the email adress you purchased the item with, if you provide the incorrect email adress, or I am unable to find this email, you will not be eligible to retrieve your item.
+						<br>
+						<br>
+						Did you get any of the products from someone else, provide their email adress so they can get acces to the file again. You will have to work with them to retrieve your item.
+						<br>
+						<br>
+						Note: VAT is not included onsite, but when purchasing you will see the price with VAT included.
+					</p>
+					<br>
+					<h3>2) Usage of the website</h3>
+					<p>
+						The usage of the website is straight forward. On the main page you will find all the posts of items that are up for sale. You can navigate through different categories by using the menu in the top right.
+						<br>
+						These items are for sale and are also considered portfolio items, however a stand-alone website for the portfolio items will be made in the future.
+						<br>
+						<br>
+						Cookies are not known to exist from my own side, however I do not know if GitHub has any cookies running. If anything, I will unable to track anything and the details GitHub might have are inaccessible for me or the user of this website.
+						<br>
+						When purchasing an item, there might be cookies used by paypal but since this is a third-party link, I have no power nor responsibilities regarding these possible cookies.
+						<br>
+						As well as not being responsible for cookies from PayPal, I am in no responsibility position about cookies for CognitoForms, possibly used by the form on the contact page.
+					</p>
+					<br>
+					<h3>3) Usage of the contact form</h3>
+					<p>
+						The contact form found on the <a class="txt_link" href="../shop/contact">contact</a> page is meant to be used as a way to contact me through a handy third party emailing system. The form is powered by <a class="txt_link" href="https://www.cognitoforms.com/" target="_blank">CognitoForms</a> and you will receive possible emails by them after contacting me. If you think you are recieving phishing emails, contact CognitoForms on their official website. Their website can be found <a class="txt_link" href="https://www.cognitoforms.com/" target="_blank">here</a>.
+						<br>
+						<br>
+						Only contact me regarding the options in the subject dropdown list. Spam will not be tolerated, and you will not be answered if you are having issues the next time. Use the contact form what it's meant to be used for and we will be in contact about the subject you contacted me for.
+					</p>
+				</div>
 				
-				<h2>Terms</h2>
-				<ol class="terms">
-					<li>You understand and agree that everything you see on this website is protected by copyrights unless otherwise stated and my only be used according to these terms and conditions. Everything that has been resold to 3rd parties, and of which it is known, actions will be taken towards those networs or individuals. It is forbidden to send or sell files from this site to other people.</li>
-					<li>Inquiries of lost content will only be taken seriously when it has been sent through the Contact page. Hereby you should always mention the email adress you used to purchase the contents with, if this email does not match any purchases in the back-end, we are unable to re-send the lost contents. Always print your confirmation in case of loss. We may ask you for a recieved invoice when you send a pack loss inguiry.<br></li>
-					<li>When purchasing models on request, you are allowed to recieve 30 days of free updates*. MadstonMagic can at any time cancel this feature if you, the client, has proven to miss-use the feature, do not pay fairly and on time, have no respect for MadstonMagic during calls or in chats, forward the products without consent, do not reply within a month or when you order but never pay for it.</li>
-					<li>All links have been checked but it is possible some have been missed, we are not responsible if any link, cookie or advertisement on this site will link you to 3rd parties that are not in any way related to the content on this site. We are not responsible for links to scam sites as we do not choose the ads to be shown on this site. Anything you do outside this website is your own responsibility.</li>
-					<li>Madston's Magic Discord server is open to anyone, you can request custom products through this server, talk to other clients and ask for their experiences, show your own work and send general messages to MadstonMagic. You are, in fact, not allowed to sell your own goods, advertise anything in any form whatsoever, be rude to anyone and send NSFW posts unless it is in one of the closed NSFW channels. </li>
-					<li>*Free updates are considered small changes to <b>previously made</b> products. No new products can be considered 'updates'. You can in fact always purchase new products, even in the 30 day period of free updates*.</li>
-					<li>MadstonMagic may at any time revise these Terms and Services by updating this posting. You are bound by any such revisions and should therefore periodically visit this page to review the current Terms and Services to which you are bound.</li>
-				</ol>
-				<p>
-					Enjoy the content!
+				<div class="column">
+					<h3>4) 30 Days Warranty rules</h3>
+					<p>
+						30 Days warranty means the following, if an update happen to be released for an item you purchased within the next 30 days of your purchase. You will be emailed the new version. If after these 30 days an update rolls out, you will not be eligible for said updated version. You will need to purchase the item again.
+						<br>
+						You can not get back your money unless you can prove to me and to paypal that you received nothing after purchasing or if the link is broken of the item you purchased. You will need to contact me about this using the Pack loss inquiry, provide your email of which you paid with (as I can only see this when you completed the transaction) and you will retrieve the item nontheless.
+						<br>
+						<br>
+						30 Days warranty for collaboration is almost the same. When purchasing a custom made product, you will have 30 days to request small changes to the product without extra costs. However, large updates such as adding a whole new part to the product, or a completely new item to the package, will not be free and you will be charged. As every item is only delivered after complete approval of the customer, updates are rarely needed but you have the rights to request them. There's no guarantee these updates will be executed as they would have to be reviewed first.
+					</p>
 					<br>
-					©2015-2022 MadstonMagic
-					<br>
-					<br>
-					TM and ® indicate trademarks of MadstonMagic
-				</p>
+					<h3>5) Copyright</h3>
+					<p>
+						Reselling or gifting purchased items is not allowed, may I come across a place where my products are being used without them purchasing the products, actions will be taken. 3D Unity/Unreal Game Assets will not be sold through paypal on this site, only through third-party websites such as the Unity Asset Store.
+						<br>
+						Custom made products are so unique that when they surface somewhere else than they were meant to be used for, both parties will be contacted for an explanation and possible other actions that may be required. Do not resell or gift paid products as this will only cause more trouble.
+						<br>
+						<br>
+						When purchasing a product you do not purchase copyrights, I still hold the copyrights over all products that are being sold, as well as custom made products, unless discussed otherwise.
+					</p>					
+				</div>
 			</div>
+			
+			
 		</div>
 		<!---------------------->
-		<!-- End Single Posts -->
+		<!-- END CONTACT FORM -->
 		<!---------------------->
 	</body>
 	<footer class="footer">
@@ -138,10 +190,6 @@
 					<h2> Terms and Services </h2>
 					<ul class="links">
 						<li><a class="link_custom" href="../shop/terms-and-services" target="_self">Terms And Services</a></li>
-						<li>&nbsp;</li>
-						<li><a class="link_custom" href="../shop/privacy" target="_self">Privacy</a></li>
-						<li>&nbsp;</li>
-						<li><a class="link_custom" href="../shop/disclaimer" target="_self">Disclaimer</a></li>
 					</ul>
 				</div>
 				
@@ -161,11 +209,7 @@
 				<div class="column">
 					<h2> Contact </h2>
 					<ul class="links">
-						<li>Join the discord and ask around. You can also always send me a DM.</li>
-						<li>&nbsp;</li>
-						<li>Tweet me something!</li>
-						<li>&nbsp;</li>
-						<li>Email is always open! <a class="link_custom" href="mailto:madstonpack@gmail.com">madstonpack@gmail.com</a></li>
+						<li>Join the <a class="link_custom" href="https://discordapp.com/invite/npT2wBK" target="_blank">discord</a> and ask around. You can also always send me a DM.</li>
 						<li>&nbsp;</li>
 						<li><a class="link_custom" href="../shop/contact" target="_self">Contact Page</a></li>
 					</ul>
@@ -192,31 +236,11 @@
 					<p>30 Days Update Warranty</p>
 				</li>
 				<li title="My work is licensed under a Creative Commons Attribution-Non-Commercial-No Derivative Works 4.0 International License">
-					<div class="cc_license">
-						<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
-							<img alt="Creative Commons License" style="border-width:0; width: 75%; padding-bottom: 45px;" src="../shop/images/icons/cc.png" />
-						</a>
-					</div>
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+						<img alt="Creative Commons-Licentie" style="border-width:0;width:75px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+					</a>
 				</li>
 			</ul>
-			<div class="cc_expanded">
-				<span>
-					All assets by
-				</span>
-				<a class="link_custom" xmlns:cc="http://creativecommons.org/ns#" href="https://madstonmagic.github.io/shop/" property="cc:attributionName" rel="cc:attributionURL">
-					MadstonMagic
-				</a> 
-				are licensed under a 
-				<a class="link_custom" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
-					Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
-				</a>.
-				
-				<br />
-				Permissions beyond the scope of this license are available at 
-				<a class="link_custom" xmlns:cc="http://creativecommons.org/ns#" href="https://madstonmagic.github.io/shop/terms-and-services" rel="cc:morePermissions">
-					https://madstonmagic.github.io/shop/terms-and-services
-				</a>.
-			</div>
 		</div>
 	</footer>
 </html>
